@@ -4,9 +4,9 @@ window.DECK_SLIDES = [
     section: "Inicio",
     eyebrow: "Producto core · La Wash",
     title: "Es mucho más que lavanderías.",
-    subtitle: "Es una inversión tecnológica de éxito para tu rentabibilidad y libertad financiera.",
+    subtitle: "Es una inversión tecnológica de éxito para tu rentabilidad y libertad financiera.",
     image: "assets/source-media/image2.png",
-    foreground: false,
+    foreground: true,
     stats: [
       ["ALTA\nRENTABILIDAD", "", "assets/source-media/image5.png"],
       ["RETORNO\nRAPIDO", "", "assets/source-media/image6.png"],
