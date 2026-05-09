@@ -31,6 +31,7 @@ window.DECK_SLIDES = [
       ["5", "Países\nCon nuestro modelo validado"]
     ],
     foot: false,
+    footLink: ["¿Quieres saber más de nosotros?", "https://lawash.es/"],
     action: ["¿Quieres saber más sobre nosotros?", "https://lawash.es/"],
     layout: "statement"
   },

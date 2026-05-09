@@ -34,8 +34,11 @@ function header(slide, i) {
 
 function footer(slide) {
   const footText = slide.foot === false ? "" : (slide.foot ? lines(slide.foot) : "La Wash Core · Producto core · franquicia de lavanderías autoservicio");
+  const footContent = slide.footLink
+    ? `<a class="foot-link" href="${safe(slide.footLink[1])}" target="_blank" rel="noopener">${lines(slide.footLink[0])}</a>`
+    : footText;
   return `<div class="slide-foot">
-    <div>${footText}</div>
+    <div>${footContent}</div>
     <div class="footer-nav" aria-label="Navegación de diapositivas">
       <button type="button" data-footer-nav="home">Inicio</button><span>·</span>
       <button type="button" data-footer-nav="prev">Atrás</button><span>·</span>
