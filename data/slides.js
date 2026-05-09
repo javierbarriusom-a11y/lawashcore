@@ -23,9 +23,15 @@ window.DECK_SLIDES = [
     eyebrow: "Liderazgo",
     title: "Líderes en  autoservicio.pioneros en resultados",
     subtitle: "Más de 15 años desarrollando el modelo más eficiente y sostenible  de europa",
-    image: "assets/source-media/image11.jpeg",
-    stats: [["5", "Países\nCon nuestro modelo validado"]],
-    foot: "¿quieres saber más sobre nosotros?",
+    stats: [
+      ["Nº1", "en Iberia\nLa marca de referencia absoluta en el sector"],
+      ["+450", "tiendas\nUna red consolidada y en constante expansión internacional"],
+      ["+3,5MM", "de clientes\nConfían en nuestra calidad y experiencia de uso"],
+      ["+30%", "franquiciados\nTienen más de un local con nosotros"],
+      ["5", "Países\nCon nuestro modelo validado"]
+    ],
+    foot: false,
+    action: ["¿Quieres saber más sobre nosotros?", "https://lawash.es/"],
     layout: "statement"
   },
   {
