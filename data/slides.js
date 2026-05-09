@@ -38,7 +38,7 @@ window.DECK_SLIDES = [
   {
     section: "Modelo",
     eyebrow: "Proceso probado",
-    title: " TU VIAJE HACIA EL ÉXITO,PASO A PAS0",
+    title: "TU VIAJE HACIA EL ÉXITO, PASO A PASO",
     subtitle: "Desde la validación comercial mediante geolocalización, pasando por el diseño técnico y arquitectónico hasta la apertura del punto de venta y las campañas de marketing inaugural",
     steps: [
       ["1", "PROCESO PROBADO", "Presentación modelo de negocio Análisis proyecto Firma contrato"],

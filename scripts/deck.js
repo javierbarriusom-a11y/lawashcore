@@ -70,22 +70,47 @@ function renderCards(cards = [], className = "") {
 }
 
 function renderProcess(slide) {
-  return `<div class="stack process-wrap">
-    ${titleBlock(slide, true)}
-    <div class="process">
-      ${slide.steps.map((step) => `
-        <article class="step">
-          ${step[0] ? `<b>${safe(step[0])}</b>` : "<b></b>"}
-          <h3>${lines(step[1])}</h3>
-          ${step[2] ? `<p>${lines(step[2])}</p>` : ""}
-        </article>`).join("")}
-    </div>
-    <div class="operations">
-      ${slide.groups.map((group) => `
-        <article>
-          <h3>${lines(group[0])}</h3>
-          <p>${lines(group[1])}</p>
-        </article>`).join("")}
+  const steps = slide.steps || [];
+  const groups = slide.groups || [];
+  const pos = [
+    { x: 5,  y: 62 },
+    { x: 22, y: 76 },
+    { x: 39, y: 24 },
+    { x: 56, y: 62 },
+    { x: 73, y: 18 },
+    { x: 90, y: 10 },
+  ];
+  const path = "M5,62 C13,62 14,76 22,76 S30,24 39,24 S47,62 56,62 S64,18 73,18 S82,10 90,10";
+  const nodesHTML = steps.map((step, i) => {
+    const p = pos[i] || { x: 50, y: 50 };
+    const isLow = p.y >= 45;
+    const hasNum = !!step[0];
+    return `<div class="snode" style="left:${p.x}%;top:${p.y}%">
+      <div class="snode__dot${hasNum ? "" : " snode__dot--end"}">${hasNum ? safe(step[0]) : "✦"}</div>
+      <div class="snode__tag snode__tag--${isLow ? "above" : "below"}">
+        <strong>${lines(step[1])}</strong>
+      </div>
+    </div>`;
+  }).join("");
+  const quadsHTML = groups.map((g) => `<div class="wquad">
+    <h4>${lines(g[0])}</h4>
+    ${g[1] ? `<p>${lines(g[1])}</p>` : ""}
+  </div>`).join("");
+  return `<div class="process-v2">
+    <div class="pv2-head">${titleBlock(slide)}</div>
+    <div class="pv2-body">
+      <div class="psnake">
+        <svg class="psnake__svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="${path}" fill="none" stroke="rgba(19,161,220,.55)" stroke-width="1.4" stroke-dasharray="3 2" stroke-linecap="round"/>
+        </svg>
+        ${nodesHTML}
+      </div>
+      <div class="pwheel">
+        <div class="pwheel__grid">
+          ${quadsHTML}
+          <div class="pwheel__hub">+ Valor<br>para el<br>franquiciado</div>
+        </div>
+      </div>
     </div>
   </div>`;
 }
