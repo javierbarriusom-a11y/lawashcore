@@ -15,7 +15,7 @@ window.DECK_SLIDES = [
       ["450\nTIENDAS ACTIVAS", "", "assets/source-media/image9.png"]
     ],
     foot: false,
-    action: ["descubre Por qué somos diferentes", "https://lawash.es/masterlawash/"],
+    action: ["Descubre por qué somos diferentes", "https://lawash.es/masterlawash/"],
     layout: "hero"
   },
   {
