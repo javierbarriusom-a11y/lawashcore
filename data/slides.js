@@ -6,7 +6,7 @@ window.DECK_SLIDES = [
     title: "Es mucho más que lavanderías.",
     subtitle: "Es una inversión tecnológica de éxito para tu rentabilidad y libertad financiera.",
     image: "assets/source-media/image2.png",
-    foreground: true,
+    foreground: false,
     stats: [
       ["ALTA\nRENTABILIDAD", "", "assets/source-media/image5.png"],
       ["RETORNO\nRAPIDO", "", "assets/source-media/image6.png"],
