@@ -179,6 +179,12 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "nexa") {
+    const icons = ["💳", "⚙️", "🎧", "👥"];
+    const modsHTML = (slide.cards || []).map((c, i) => `
+      <div class="nvc-mod">
+        <span class="nvc-icon">${icons[i] || ""}</span>
+        <span class="nvc-name">${lines(c[0])}</span>
+      </div>`).join("");
     const cardsHTML = (slide.cards || []).map((c) => `
       <article class="nv2-card">
         <h3>${lines(c[0])}</h3>
@@ -186,10 +192,32 @@ function layout(slide) {
       </article>`).join("");
     return `<div class="nexa-v2">
       ${titleBlock(slide, true)}
-      <div class="nv2-diagram">
-        <img src="${safe(slide.image)}" alt="NEXA ecosystem diagram">
+      <div class="nv2-chart">
+        <div class="nvc-hub-row">
+          <div class="nvc-hub">NEXA</div>
+        </div>
+        <svg class="nvc-svg" viewBox="0 0 1000 70" preserveAspectRatio="none">
+          <defs>
+            <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <g filter="url(#glow)" stroke="#13a1dc" stroke-width="2.5" fill="none">
+            <line x1="500" y1="0" x2="500" y2="26"/>
+            <line x1="125" y1="26" x2="875" y2="26"/>
+            <line x1="125" y1="26" x2="125" y2="70"/>
+            <line x1="375" y1="26" x2="375" y2="70"/>
+            <line x1="625" y1="26" x2="625" y2="70"/>
+            <line x1="875" y1="26" x2="875" y2="70"/>
+          </g>
+          <g filter="url(#glow)" fill="#13a1dc">
+            <circle cx="125" cy="26" r="5"/>
+            <circle cx="375" cy="26" r="5"/>
+            <circle cx="625" cy="26" r="5"/>
+            <circle cx="875" cy="26" r="5"/>
+          </g>
+        </svg>
+        <div class="nvc-modules">${modsHTML}</div>
       </div>
-      ${cardsHTML ? `<div class="nv2-cards">${cardsHTML}</div>` : ""}
+      <div class="nv2-cards">${cardsHTML}</div>
     </div>`;
   }
   if (slide.layout === "image-cards") {
