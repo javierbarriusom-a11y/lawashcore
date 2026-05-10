@@ -89,6 +89,7 @@ function renderProcess(slide) {
       <div class="snode__dot${hasNum ? "" : " snode__dot--end"}">${hasNum ? safe(step[0]) : "✦"}</div>
       <div class="snode__tag snode__tag--${isLow ? "above" : "below"}">
         <strong>${lines(step[1])}</strong>
+        ${step[2] ? `<p>${safe(step[2])}</p>` : ""}
       </div>
     </div>`;
   }).join("");
