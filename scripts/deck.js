@@ -226,6 +226,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "dashboard") {
+    if (slide.foreground === false) {
+      return `<div class="dashboard-layout dashboard-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
+      </div>`;
+    }
     return `<div class="dashboard-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
       ${media(slide.image, "Nexa Gestión")}

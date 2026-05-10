@@ -669,6 +669,21 @@ main { min-height: 0; display: grid; align-items: center; }
   text-align: right;
 }
 
+/* ── Slide 9: NEXA Dashboard — zoom background to hide browser chrome ── */
+.nexa-dashboard {
+  background:
+    linear-gradient(90deg,
+      rgba(23,31,40,.96) 0%,
+      rgba(23,31,40,.82) 42%,
+      rgba(23,31,40,.30) 72%,
+      rgba(23,31,40,.10) 100%),
+    var(--slide-bg) center 35% / 130% auto no-repeat !important;
+}
+.dashboard-layout--nofg {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 62%;
+}
+
 /* ── Nexa V2 ─────────────────────────────────── */
 .nexa-v2 {
   display: grid;

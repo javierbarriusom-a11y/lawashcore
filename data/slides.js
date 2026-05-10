@@ -141,6 +141,8 @@ window.DECK_SLIDES = [
     title: "NEXA Gestión.  \nTUS operaciones, finanzas y clientes de todos tus locales  desde cualquier lugar",
     subtitle: "¿Quieres saber más?",
     image: "assets/source-media/image30.png",
+    foreground: false,
+    theme: "nexa-dashboard",
     cards: [
       ["GESTIÓN REMOTA", "Resolución remota de incidencias en tiempo real, en un solo click\nMonitorización del local y maquinaria\nToda la operativa desde app o panel web."],
       ["Decide con datos", "Facturación y tesorería \nIngresos  y resultados a nivele maquinaria. \nControl  y registro de tus clientes\nCumplimos con la norma Verifactu. Cero fricciones fiscales (*)."],
