@@ -146,7 +146,7 @@ window.DECK_SLIDES = [
     cards: [
       ["GESTIÓN REMOTA", "Resolución remota de incidencias en tiempo real, en un solo click\nMonitorización del local y maquinaria\nToda la operativa desde app o panel web."],
       ["Decide con datos", "Facturación y tesorería \nIngresos  y resultados a nivele maquinaria. \nControl  y registro de tus clientes\nCumplimos con la norma Verifactu. Cero fricciones fiscales (*)."],
-      ["Control de tu negocio en todo momento", "Analítica avanzada  y reportes personalizados via dashboard\nResultados de tu local en un vistazo\nCompara  los resultados de de tus locales con los de tu zona"]
+      ["Control de tu negocio en todo momento", "Analítica avanzada  y reportes personalizados via dashboard\nResultados de tu local en un vistazo\nCompara  los resultados de de tus locales con los de tu zona (*)"]
     ],
     foot: "(*) Opcional",
     layout: "dashboard"
