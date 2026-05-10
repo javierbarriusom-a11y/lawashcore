@@ -238,6 +238,7 @@ window.DECK_SLIDES = [
     eyebrow: "Atención",
     title: "UNA LAVANDERÍA a veces LLEVA TRABAJO,  pero \nATENDER A TUS CLIENTES ES LO PRIMERO.",
     image: "assets/source-media/image47.png",
+    foreground: false,
     stats: [
       ["+215K", "USUARIOS ATENDIDOS\nSATISFACTORIAMENTE"],
       ["365 DÍAS", "ATENCIÓN SAT 365 / CENTRO DEDICADO"],

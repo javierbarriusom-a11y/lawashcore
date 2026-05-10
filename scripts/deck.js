@@ -293,6 +293,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "care") {
+    if (slide.foreground === false) {
+      return `<div class="care-layout care-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderStats(slide.stats)}${renderCards(slide.cards, "two-col")}</div>
+      </div>`;
+    }
     return `<div class="care-layout">
       <div>${titleBlock(slide, true)}${renderStats(slide.stats)}${renderCards(slide.cards, "two-col")}</div>
       ${media(slide.image, "Atención La Wash")}
