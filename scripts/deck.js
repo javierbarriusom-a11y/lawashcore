@@ -77,10 +77,10 @@ function renderProcess(slide) {
     { x: 22, y: 76 },
     { x: 39, y: 24 },
     { x: 56, y: 62 },
-    { x: 73, y: 18 },
+    { x: 73, y: 55 },
     { x: 90, y: 10 },
   ];
-  const path = "M5,62 C13,62 14,76 22,76 S30,24 39,24 S47,62 56,62 S64,18 73,18 S82,10 90,10";
+  const path = "M5,62 C13,62 14,76 22,76 S30,24 39,24 S47,62 56,62 S67,55 73,55 S84,10 90,10";
   const nodesHTML = steps.map((step, i) => {
     const p = pos[i] || { x: 50, y: 50 };
     const isLow = p.y >= 45;
