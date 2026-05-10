@@ -48,7 +48,7 @@ function footer(slide) {
 }
 
 function renderStats(stats = [], compact = false) {
-  return `<div class="stats ${compact ? "compact" : ""}">${stats.map((stat) => `
+  return `<div class="stats ${compact ? "compact" : ""} count-${stats.length}">${stats.map((stat) => `
     <article class="stat">
       ${stat[2] ? `<img class="stat-icon" src="${safe(stat[2])}" alt="">` : ""}
       <strong>${lines(stat[0])}</strong>
