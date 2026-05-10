@@ -157,7 +157,7 @@ window.DECK_SLIDES = [
     title: "NEXA COMMERCE: \nCOMPRA de PRODUCTOS Y SERVICIOS de la wash \nEN 1 CLICK",
     image: "assets/source-media/image35.png",
     cards: [
-      ["Productos  y servicios contratables de Lawash:", "energía\nseguros\nmarketing\nconsumibles\nservicio de limpieza diaria\ngestion de reseñas\nactivaciones remotas\nsolución lockers amazon / inpost\ngestión integral premium"],
+      ["Productos  y servicios contratables de Lawash:", "Energía\nSeguros\nMarketing\nConsumibles\nServicio de limpieza diaria\nGestión de reseñas\nActivaciones remotas\nSolución lockers Amazon / Inpost\nGestión integral premium"],
       ["GESTION DE PEDIDOS", "Catálogo inteligente\nTarifas dinámicas\nPromociones o bonificaciones\nPrecios personalizados\nPedido integrado con Nexa Gestión & PoS\nSeguimiento del estado del pedido en tiempo real\nGeneración automática de facturas\nConciliación con sistema Nexa"]
     ],
     layout: "commerce"
