@@ -87,13 +87,17 @@ window.DECK_SLIDES = [
     section: "Nexa",
     eyebrow: "TECNOLOGIA",
     title: "NEXA: TECNOLOGÍA & INTELIGENCIA A TU SERVICIO",
-    subtitle: "EL SISTEMA CENTRAL INTELIGENTE DE tu TIENDA\nAutomatiza, conecta y optimiza todo el negocio.",
-    image: "assets/source-media/image21.png",
+    subtitle: "EL SISTEMA CENTRAL INTELIGENTE DE TU TIENDA",
+    subtext: "Automatiza, conecta y optimiza todo el negocio.",
     cards: [
-      ["Conoce e incentiva a tu consumidor", "Crear una relación continua con el consumidor para incrementar su frecuencia de uso y ticket medio de forma diferencial."],
-      ["Gestión y servicios para tu negocio de forma remota y fácil", "Gestionar de forma remota la totalidad de las operaciones de la tienda y su administración contable y financiera."],
-      ["Sistema de punto de venta con capacidades inteligentes; de pago, integra promociones y upselling y gestiona las máquinas.", ""],
-      ["*Customer care & success", "Adquirir productos y servicios para operar la lavandería con condiciones preferentes, trazabilidad y automatización total."]
+      ["NEXA PoS", "Sistema de punto de venta con capacidades inteligentes; de pago, integra promociones y upselling y gestiona las máquinas."],
+      ["NEXA Gestión", "Gestionar de forma remota la totalidad de las operaciones de la tienda y su administración contable y financiera."],
+      ["NEXA Services", "Adquirir productos y servicios para operar la lavandería con condiciones preferentes, trazabilidad y automatización total.\n*Customer care & success"],
+      ["NEXA Customer", "Crear una relación continua con el consumidor para incrementar su frecuencia de uso y ticket medio de forma diferencial."]
+    ],
+    statements: [
+      "Gestión y servicios para tu negocio de forma remota y fácil",
+      "Conoce e incentiva a tu consumidor"
     ],
     layout: "nexa"
   },
