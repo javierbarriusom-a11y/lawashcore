@@ -87,7 +87,7 @@ window.DECK_SLIDES = [
     section: "Nexa",
     eyebrow: "TECNOLOGIA",
     title: "NEXA: TECNOLOGÍA & INTELIGENCIA A TU SERVICIO",
-    image: "assets/source-media/image21.png",
+    image: "assets/source-media/nexa-diagram.png",
     noBackground: true,
     cards: [
       ["NEXA PoS", "Sistema de punto de venta con capacidades inteligentes; de pago, integra promociones y upselling y gestiona las máquinas."],
