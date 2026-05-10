@@ -179,11 +179,17 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "nexa") {
+    const cardsHTML = (slide.cards || []).map((c) => `
+      <article class="nv2-card">
+        <h3>${lines(c[0])}</h3>
+        ${c[1] ? `<p>${lines(c[1])}</p>` : ""}
+      </article>`).join("");
     return `<div class="nexa-v2">
-      ${titleBlock(slide)}
+      ${titleBlock(slide, true)}
       <div class="nv2-diagram">
         <img src="${safe(slide.image)}" alt="NEXA ecosystem diagram">
       </div>
+      ${cardsHTML ? `<div class="nv2-cards">${cardsHTML}</div>` : ""}
     </div>`;
   }
   if (slide.layout === "image-cards") {
