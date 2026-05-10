@@ -597,9 +597,15 @@ main { min-height: 0; display: grid; align-items: center; }
 .nexa-v2 {
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 20px;
+  gap: 16px;
   height: 100%;
   min-height: 0;
+}
+.nexa-v2 .subtitle {
+  font-size: 18px;
+  line-height: 1.55;
+  margin-top: 10px;
+  color: rgba(255,255,255,.88);
 }
 .nv2-diagram {
   display: flex;
@@ -611,7 +617,10 @@ main { min-height: 0; display: grid; align-items: center; }
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  border: none;
 }
 
 /* ── Process V2 ─────────────────────────────── */

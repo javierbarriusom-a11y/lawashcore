@@ -87,7 +87,7 @@ window.DECK_SLIDES = [
     section: "Nexa",
     eyebrow: "TECNOLOGIA",
     title: "NEXA: TECNOLOGÍA & INTELIGENCIA A TU SERVICIO",
-    subtitle: "EL SISTEMA CENTRAL INTELIGENTE DE TU TIENDA · Automatiza, conecta y optimiza todo el negocio.",
+    subtitle: "EL SISTEMA CENTRAL INTELIGENTE DE TU TIENDA\nAutomatiza, conecta y optimiza todo el negocio.\nGestión y servicios para tu negocio de forma remota y fácil\nConoce e incentiva a tu consumidor",
     image: "assets/source-media/image21.png",
     noBackground: true,
     layout: "nexa"
