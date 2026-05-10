@@ -461,6 +461,15 @@ main { min-height: 0; display: grid; align-items: center; }
   grid-template-columns: minmax(0, 1fr);
   max-width: 68%;
 }
+.soporte-bg {
+  background:
+    linear-gradient(90deg,
+      rgba(23,31,40,.97) 0%,
+      rgba(23,31,40,.88) 45%,
+      rgba(23,31,40,.40) 70%,
+      rgba(23,31,40,.10) 100%),
+    var(--slide-bg) right center / auto 100% no-repeat !important;
+}
 .app-layout .media img { max-height: 68svh; background: none; box-shadow: none; border-radius: 0; }
 .app-layout--nofg { grid-template-columns: minmax(0, 1fr); }
 .dashboard-layout .media img,
