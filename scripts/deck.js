@@ -251,6 +251,7 @@ function layout(slide) {
     if (slide.foreground === false) {
       return `<div class="customer-layout customer-layout--nofg">
         <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
+        ${slide.action ? `<a class="hero-action hero-action--right" href="${safe(slide.action[1])}" target="_blank" rel="noopener">${lines(slide.action[0])}</a>` : ""}
       </div>`;
     }
     return `<div class="customer-layout">

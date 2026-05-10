@@ -176,7 +176,8 @@ window.DECK_SLIDES = [
       ["GESTION COMERCIAL Y FIDELIZACIÓN", "Descuentos, promociones especiales y recompensas a disposicion de tus clientes. Ventajas únicas que elevan su experiencia en tu lavandería a otro nivel."],
       ["SERVICIOS DE GEOMARKETING. CAMPAÑAS, SOCIAL MEDIA..", "Enfoque único e innovador: departamento de servicios de marketing a disposicion del franquiciado, con acciones segmentadas, personalizadas y geolocalizadas."]
     ],
-    foot: "SÚMATE AL CLUB LA WASH",
+    foot: false,
+    action: ["Súmate al club La Wash", "https://lawash.es/club-la-wash/"],
     layout: "customer"
   },
   {
