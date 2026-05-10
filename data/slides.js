@@ -46,7 +46,7 @@ window.DECK_SLIDES = [
       ["3", "ASESORAMIENTO CONTRATO", "Contratación del Constructor e Ingeniería Asesoramiento y Ejecución de obras Entrega de máquinas"],
       ["4", "CONSECUCIÓN DE OBRAS", "Puesta en Marcha\nControl de calidades"],
       ["5", "ONBOARDING FRANQUICIADOS", "Puesta en Marcha Plan de marketing y lanzamiento Activación operativa Evaluación y ajustes iniciales"],
-      ["", "QUICK OFF / APERTURA", ""]
+      ["", "QUICK OFF / APERTURA", "Apertura oficial del local\nActivación operativa completa\nPlan de marketing inaugural"]
     ],
     groups: [
       ["Customer Success", "Entrega de manuales Reuniones de acompañamiento Capacitación en gestión y herramientas Seguimiento personalizado"],
