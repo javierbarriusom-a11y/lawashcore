@@ -168,7 +168,6 @@ window.DECK_SLIDES = [
     section: "Nexa",
     eyebrow: "TECNOLOGIA",
     title: "NEXA CUSTOMER: \nTÚ PONES  EL NEGOCIO. NOSOTROS movilizamos   LOS CLIENTES",
-    subtitle: "app la wash\nMás que un medio de pago. Un herramiente de engagement para conocer, segmentar y premiar a tus consumidores",
     image: "assets/source-media/image36.png",
     foreground: false,
     theme: "nexa-customer",
