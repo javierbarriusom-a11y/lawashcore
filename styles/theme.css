@@ -394,28 +394,24 @@ main { min-height: 0; display: grid; align-items: center; }
 .nexa-layout .title.small,
 .commerce-layout .title.small { font-size: 86px; }
 
-/* Pillars V2 – staircase diagonal layout */
+/* Pillars V2 – vertical stack */
 .pillars-v2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100%;
   width: 100%;
 }
 .pv2-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
-.pv2-item--0 { grid-column: 1; grid-row: 1; padding-top: 8px; }
-.pv2-item--1 { grid-column: 2; grid-row: 2; align-self: center; }
-.pv2-item--2 { grid-column: 3; grid-row: 3; align-self: end; padding-bottom: 8px; }
 .pv2-title {
   font-family: var(--display);
-  font-size: 60px;
-  line-height: 1;
+  font-size: 110px;
+  line-height: 0.9;
   font-weight: 400;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   text-transform: uppercase;
   color: var(--wash-white);
   letter-spacing: 0;
@@ -423,20 +419,20 @@ main { min-height: 0; display: grid; align-items: center; }
 }
 .pv2-initial {
   font-style: normal;
-  font-size: 2.4em;
+  font-size: 1.6em;
   color: var(--wash-green);
-  line-height: 0.72;
+  line-height: 0.75;
   display: inline-block;
   vertical-align: bottom;
   margin-right: 1px;
 }
 .pv2-desc {
   margin: 0;
-  font-size: 20px;
-  line-height: 1.38;
+  font-size: 28px;
+  line-height: 1.32;
   font-weight: 700;
   color: rgba(255,255,255,.92);
-  max-width: 360px;
+  max-width: 700px;
   text-shadow: 0 2px 14px rgba(0,0,0,.5);
 }
 
