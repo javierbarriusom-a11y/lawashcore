@@ -170,9 +170,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "pillars") {
-    return `<div class="pillars-layout">
-      <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
-      ${media(slide.image, "Interior La Wash")}
+    return `<div class="pillars-v2">${(slide.cards || []).map((card, i) => `
+      <div class="pv2-item pv2-item--${i}">
+        <h2 class="pv2-title"><em class="pv2-initial">${safe(card[0][0])}</em>${lines(card[0].slice(1))}</h2>
+        ${card[1] ? `<p class="pv2-desc">${lines(card[1])}</p>` : ""}
+      </div>`).join("")}
     </div>`;
   }
   if (slide.layout === "nexa") {

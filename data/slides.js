@@ -79,8 +79,7 @@ window.DECK_SLIDES = [
     cards: [
       ["TECNOLOGIA", "Somos la única empresa del sector con tecnología propia para vender más y ser más eficientes"],
       ["SERVICIOS", "Solo en La wash encontrarás departamentos especializados para todas tus necesidades"],
-      ["MARKETING", "Tú pones el negocio. La Wash, los clientes."],
-      ["ECOSISTEMA NEXA", ""]
+      ["MARKETING", "Tú pones el negocio. La Wash, los clientes."]
     ],
     layout: "pillars"
   },
