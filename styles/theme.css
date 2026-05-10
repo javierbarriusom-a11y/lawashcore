@@ -705,14 +705,14 @@ main { min-height: 0; display: grid; align-items: center; }
 }
 .nexa-customer .card h3 {
   color: var(--wash-green);
-  font-size: 68px;
+  font-size: 44px;
 }
 .nexa-customer .card p {
-  font-size: 30px;
-  line-height: 1.35;
+  font-size: 17px;
+  line-height: 1.38;
 }
 .nexa-customer .card {
-  padding: 32px 28px;
+  padding: 24px 22px;
 }
 
 /* ── Nexa V2 ─────────────────────────────────── */
