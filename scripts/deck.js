@@ -282,6 +282,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "support") {
+    if (slide.foreground === false) {
+      return `<div class="support-layout support-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
+      </div>`;
+    }
     return `<div class="support-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
       ${media(slide.image, "Soporte La Wash")}

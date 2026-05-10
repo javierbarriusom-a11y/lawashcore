@@ -224,6 +224,7 @@ window.DECK_SLIDES = [
     title: "DESCUBRE TODOS LOS SERVICIOS QUE TENEMOS PARA TI",
     subtitle: "TODA LA AYUDA QUE NECESITES PARA CONSEGUIR EL ÉXITO",
     image: "assets/source-media/image44.png",
+    foreground: false,
     cards: [
       ["SOPORTE 24X7", ""],
       ["CALL CENTER PROPIO 365 DÍAS", "Call center y SAT propio\n365 días al año\n92% de resolución remota"],
