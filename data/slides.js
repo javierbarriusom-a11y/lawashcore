@@ -199,19 +199,6 @@ window.DECK_SLIDES = [
     layout: "app"
   },
   {
-    section: "Nexa",
-    eyebrow: "TECNOLOGIA",
-    title: "NEXA CUSTOMER: \nTÚ PONES  EL NEGOCIO. NOSOTROS,  LOS CLIENTES",
-    subtitle: "SÚMATE AL CLUB LA WASH\napp la wash\nMás que un medio de pago. Un herramiente de engagement para conocer, segmentar y premiar a tus consumidores",
-    image: "assets/source-media/image36.png",
-    cards: [
-      ["GESTION COMERCIAL Y FIDELIZACIÓN", "Descuentos, promociones especiales y recompensas a disposicion de tus clientes. Ventajas únicas que elevan su experiencia en tu lavandería a otro nivel."],
-      ["SERVICIOS DE GEOMARKETING. CAMPAÑAS, SOCIAL MEDIA..", "Enfoque único e innovador: departamento de servicios de marketing a disposicion del franquiciado, con acciones segmentadas, personalizadas y geolocalizadas"],
-      ["CLIENTES SATISFECHOS Y FIELES", ""]
-    ],
-    layout: "customer"
-  },
-  {
     section: "Servicios",
     eyebrow: " SERVICIOS DISEÑADOS PARA TI",
     title: "NOS OCUPAMOS.\nTE ACOMPAÑAMOS ANTES, DURANTE Y DESPUÉS",
