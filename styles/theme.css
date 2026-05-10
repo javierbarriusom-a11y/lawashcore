@@ -393,6 +393,9 @@ main { min-height: 0; display: grid; align-items: center; }
 .services-layout .title.small,
 .nexa-layout .title.small,
 .commerce-layout .title.small { font-size: 86px; }
+.commerce-layout--nofg {
+  grid-template-columns: minmax(0, 1fr);
+}
 
 /* Pillars V2 – vertical stack */
 .pillars-v2 {

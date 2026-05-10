@@ -237,6 +237,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "commerce") {
+    if (slide.foreground === false) {
+      return `<div class="commerce-layout commerce-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards, "three-col")}</div>
+      </div>`;
+    }
     return `<div class="commerce-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards, "two-col")}</div>
       ${media(slide.image, "Nexa Commerce")}
