@@ -159,7 +159,7 @@ window.DECK_SLIDES = [
     cards: [
       ["Productos  y servicios contratables de Lawash:", "Energía\nSeguros\nMarketing\nConsumibles\nServicio de limpieza diaria\nGestión de reseñas\nActivaciones remotas\nSolución lockers Amazon / Inpost\nGestión integral premium"],
       ["GESTION DE PEDIDOS", "Catálogo inteligente\nTarifas dinámicas\nPromociones o bonificaciones\nPrecios personalizados\nPedido integrado con Nexa Gestión & PoS\nSeguimiento del estado del pedido en tiempo real\nGeneración automática de facturas\nConciliación con sistema Nexa"],
-      ["PRECIOS PERSONALIZADOS", ""]
+      ["PRECIOS PERSONALIZADOS", "Tarifas dinámicas\nPromociones o bonificaciones"]
     ],
     foreground: false,
     layout: "commerce"
