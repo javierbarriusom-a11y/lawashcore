@@ -173,9 +173,9 @@ window.DECK_SLIDES = [
     foreground: false,
     theme: "nexa-customer",
     cards: [
+      ["APP LA WASH", "Más que un medio de pago. Una herramienta de engagement para conocer, segmentar y premiar a tus consumidores."],
       ["GESTION COMERCIAL Y FIDELIZACIÓN", "Descuentos, promociones especiales y recompensas a disposicion de tus clientes. Ventajas únicas que elevan su experiencia en tu lavandería a otro nivel."],
-      ["SERVICIOS DE GEOMARKETING. CAMPAÑAS, SOCIAL MEDIA..", "DEnfoque único e innovador: departamento de servicios de marketing a disposicion del franquiciado, con accione segmentadas, personalizadas y geolocalizadas"],
-      ["CLIENTES SATISFECHOS Y FIELES", ""]
+      ["SERVICIOS DE GEOMARKETING. CAMPAÑAS, SOCIAL MEDIA..", "Enfoque único e innovador: departamento de servicios de marketing a disposicion del franquiciado, con acciones segmentadas, personalizadas y geolocalizadas."]
     ],
     foot: "SÚMATE AL CLUB LA WASH",
     layout: "customer"

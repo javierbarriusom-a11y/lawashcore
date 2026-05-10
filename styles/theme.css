@@ -691,16 +691,21 @@ main { min-height: 0; display: grid; align-items: center; }
 .nexa-customer {
   background:
     linear-gradient(90deg,
-      rgba(23,31,40,.10) 0%,
-      rgba(23,31,40,.30) 32%,
-      rgba(23,31,40,.90) 52%,
+      rgba(23,31,40,.05) 0%,
+      rgba(23,31,40,.18) 28%,
+      rgba(23,31,40,.88) 50%,
       rgba(23,31,40,.97) 100%),
-    var(--slide-bg) 4% center / auto 90% no-repeat !important;
+    linear-gradient(0deg, rgba(23,31,40,.55) 0%, transparent 18%),
+    var(--slide-bg) 4% center / auto 78% no-repeat !important;
 }
 .customer-layout--nofg {
   grid-template-columns: minmax(0, 1fr);
   margin-left: auto;
   max-width: 58%;
+}
+.nexa-customer .card h3 {
+  color: var(--wash-green);
+  font-size: 28px;
 }
 
 /* ── Nexa V2 ─────────────────────────────────── */
