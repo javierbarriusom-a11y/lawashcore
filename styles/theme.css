@@ -182,7 +182,7 @@ main { min-height: 0; display: grid; align-items: center; }
   letter-spacing: 0;
   text-wrap: balance;
 }
-.title.small { font-size: 56px; line-height: .96; }
+.title.small { font-size: 86px; line-height: .92; }
 .subtitle {
   margin: 16px 0 0;
   max-width: 900px;
@@ -386,14 +386,13 @@ main { min-height: 0; display: grid; align-items: center; }
 .operations { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
 .operations article { min-height: 112px; }
 
-.process-wrap .title.small { font-size: 46px; }
-.process-wrap .subtitle { font-size: 18px; margin-top: 10px; }
+.process-wrap .title.small { font-size: 86px; }
 .process-wrap .card p,
 .process-wrap .step p,
 .process-wrap .operations p { font-size: 11px; line-height: 1.24; }
 .services-layout .title.small,
 .nexa-layout .title.small,
-.commerce-layout .title.small { font-size: 48px; }
+.commerce-layout .title.small { font-size: 86px; }
 
 .pillars-layout .media img,
 .nexa-layout .media img,
@@ -464,8 +463,8 @@ main { min-height: 0; display: grid; align-items: center; }
 @media (max-width: 1100px) {
   :root { --slide-pad: 60px; }
   .nav-pills { display: none; }
-  .title { font-size: 62px; }
-  .title.small { font-size: 48px; }
+  .title { font-size: 68px; }
+  .title.small { font-size: 68px; }
   .subtitle { font-size: 18px; }
   .hero-layout,
   .statement-layout,
@@ -496,7 +495,7 @@ main { min-height: 0; display: grid; align-items: center; }
   .slide-foot { display: none; }
   .slide-grid { grid-template-rows: auto minmax(0, 1fr); gap: 12px; }
   .title { font-size: 72px; }
-  .title.small { font-size: 50px; }
+  .title.small { font-size: 72px; }
   .subtitle { font-size: 19px; margin-top: 10px; }
   .card,
   .step,
@@ -561,8 +560,8 @@ main { min-height: 0; display: grid; align-items: center; }
   align-content: start;
   height: 100%;
 }
-.pv2-head .title { font-size: 60px; line-height: 0.95; }
-.pv2-head .subtitle { font-size: 15px; margin-top: 8px; max-width: 860px; }
+.pv2-head .title { font-size: 86px; line-height: .92; }
+.pv2-head .subtitle { font-size: 22px; margin-top: 16px; max-width: 860px; }
 .pv2-body {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
