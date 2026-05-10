@@ -202,8 +202,9 @@ window.DECK_SLIDES = [
     section: "Servicios",
     eyebrow: " SERVICIOS DISEÑADOS PARA TI",
     title: "NOS OCUPAMOS.\nTE ACOMPAÑAMOS ANTES, DURANTE Y DESPUÉS",
-    subtitle: "¿QUIERES SABER MÁS?",
     image: "assets/source-media/image42.png",
+    foreground: false,
+    theme: "servicios-bg",
     cards: [
       ["SERVICIO DE LIMPIEZA DIARIA", ""],
       ["TarifaS planas EXCLUSIVAS luz y gas", ""],

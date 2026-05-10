@@ -447,6 +447,19 @@ main { min-height: 0; display: grid; align-items: center; }
 .care-layout .media img { object-fit: cover; height: 58svh; }
 .customer-layout .media img,
 .services-layout .media img { max-height: 66svh; }
+/* ── Servicios slide: left gradient, full-width card grid ── */
+.servicios-bg {
+  background:
+    linear-gradient(90deg,
+      rgba(23,31,40,.97) 0%,
+      rgba(23,31,40,.88) 40%,
+      rgba(23,31,40,.55) 70%,
+      rgba(23,31,40,.20) 100%),
+    var(--slide-bg) right center / auto 100% no-repeat !important;
+}
+.services-layout--nofg {
+  grid-template-columns: minmax(0, 1fr);
+}
 .app-layout .media img { max-height: 68svh; }
 .dashboard-layout .media img,
 .upsell-layout .media img { max-height: 46svh; }

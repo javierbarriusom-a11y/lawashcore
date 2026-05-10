@@ -271,6 +271,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "services") {
+    if (slide.foreground === false) {
+      return `<div class="services-layout services-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards, "service-grid")}</div>
+      </div>`;
+    }
     return `<div class="services-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards, "service-grid")}</div>
       ${media(slide.image, "Servicios La Wash")}
