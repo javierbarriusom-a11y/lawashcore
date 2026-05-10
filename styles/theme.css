@@ -465,10 +465,10 @@ main { min-height: 0; display: grid; align-items: center; }
   background:
     linear-gradient(90deg,
       rgba(23,31,40,.97) 0%,
-      rgba(23,31,40,.88) 45%,
-      rgba(23,31,40,.40) 70%,
-      rgba(23,31,40,.10) 100%),
-    var(--slide-bg) right center / auto 100% no-repeat !important;
+      rgba(23,31,40,.90) 40%,
+      rgba(23,31,40,.15) 65%,
+      transparent 100%),
+    var(--slide-bg) right center / cover no-repeat !important;
 }
 .app-layout .media img { max-height: 68svh; background: none; box-shadow: none; border-radius: 0; }
 .app-layout--nofg { grid-template-columns: minmax(0, 1fr); }
