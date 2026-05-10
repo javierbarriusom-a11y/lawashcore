@@ -672,6 +672,7 @@ main { min-height: 0; display: grid; align-items: center; }
 /* ── Slide 9: NEXA Dashboard — zoom background to hide browser chrome ── */
 .nexa-dashboard {
   background:
+    linear-gradient(0deg, transparent 55%, rgba(23,31,40,.98) 100%),
     linear-gradient(90deg,
       rgba(23,31,40,.96) 0%,
       rgba(23,31,40,.82) 42%,
