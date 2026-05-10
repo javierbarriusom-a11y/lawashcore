@@ -145,6 +145,7 @@ function backgroundFor(slide, index) {
 }
 
 function slideStyle(slide, index) {
+  if (slide.noBackground) return ' style="--slide-bg: none"';
   return ` style="--slide-bg: url('../${safe(backgroundFor(slide, index))}')"`;
 }
 
@@ -178,31 +179,10 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "nexa") {
-    const modules = (slide.cards || []).map((c) => `<div class="nc-module">
-      <h4>${lines(c[0])}</h4>
-      ${c[1] ? `<p>${lines(c[1])}</p>` : ""}
-    </div>`).join("");
-    const stmts = (slide.statements || []).map((s) => `<p class="nv2-stmt">${lines(s)}</p>`).join("");
     return `<div class="nexa-v2">
-      <div class="nv2-left">
-        ${titleBlock(slide)}
-        <div class="nexa-chart">
-          <div class="nc-hub">NEXA</div>
-          <svg class="nc-lines" viewBox="0 0 100 50" preserveAspectRatio="none">
-            <line x1="50" y1="0" x2="50" y2="22" stroke="rgba(19,161,220,.8)" stroke-width="2"/>
-            <line x1="12.5" y1="22" x2="87.5" y2="22" stroke="rgba(19,161,220,.8)" stroke-width="2"/>
-            <line x1="12.5" y1="22" x2="12.5" y2="50" stroke="rgba(19,161,220,.8)" stroke-width="2"/>
-            <line x1="37.5" y1="22" x2="37.5" y2="50" stroke="rgba(19,161,220,.8)" stroke-width="2"/>
-            <line x1="62.5" y1="22" x2="62.5" y2="50" stroke="rgba(19,161,220,.8)" stroke-width="2"/>
-            <line x1="87.5" y1="22" x2="87.5" y2="50" stroke="rgba(19,161,220,.8)" stroke-width="2"/>
-          </svg>
-          <div class="nc-modules">${modules}</div>
-        </div>
-      </div>
-      <div class="nv2-right">
-        <h3 class="nv2-sub">${safe(slide.subtitle || "")}</h3>
-        ${slide.subtext ? `<p class="nv2-subtext">${safe(slide.subtext)}</p>` : ""}
-        <div class="nv2-stmts">${stmts}</div>
+      ${titleBlock(slide)}
+      <div class="nv2-diagram">
+        <img src="${safe(slide.image)}" alt="NEXA ecosystem diagram">
       </div>
     </div>`;
   }
