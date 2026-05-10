@@ -687,6 +687,22 @@ main { min-height: 0; display: grid; align-items: center; }
   max-width: 62%;
 }
 
+/* ── Slide 11: NEXA Customer — woman left, content right ── */
+.nexa-customer {
+  background:
+    linear-gradient(90deg,
+      rgba(23,31,40,.10) 0%,
+      rgba(23,31,40,.30) 32%,
+      rgba(23,31,40,.90) 52%,
+      rgba(23,31,40,.97) 100%),
+    var(--slide-bg) 4% center / auto 90% no-repeat !important;
+}
+.customer-layout--nofg {
+  grid-template-columns: minmax(0, 1fr);
+  margin-left: auto;
+  max-width: 58%;
+}
+
 /* ── Nexa V2 ─────────────────────────────────── */
 .nexa-v2 {
   display: grid;

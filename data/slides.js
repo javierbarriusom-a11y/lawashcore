@@ -170,6 +170,8 @@ window.DECK_SLIDES = [
     title: "NEXA CUSTOMER: \nTÚ PONES  EL NEGOCIO. NOSOTROS movilizamos   LOS CLIENTES",
     subtitle: "app la wash\nMás que un medio de pago. Un herramiente de engagement para conocer, segmentar y premiar a tus consumidores",
     image: "assets/source-media/image36.png",
+    foreground: false,
+    theme: "nexa-customer",
     cards: [
       ["GESTION COMERCIAL Y FIDELIZACIÓN", "Descuentos, promociones especiales y recompensas a disposicion de tus clientes. Ventajas únicas que elevan su experiencia en tu lavandería a otro nivel."],
       ["SERVICIOS DE GEOMARKETING. CAMPAÑAS, SOCIAL MEDIA..", "DEnfoque único e innovador: departamento de servicios de marketing a disposicion del franquiciado, con accione segmentadas, personalizadas y geolocalizadas"],

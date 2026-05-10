@@ -248,6 +248,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "customer") {
+    if (slide.foreground === false) {
+      return `<div class="customer-layout customer-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
+      </div>`;
+    }
     return `<div class="customer-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards)}</div>
       ${media(slide.image, "App La Wash")}
