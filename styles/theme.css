@@ -597,12 +597,12 @@ main { min-height: 0; display: grid; align-items: center; }
 .nexa-v2 {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  gap: 8px;
+  gap: 6px;
   height: 100%;
   min-height: 0;
 }
 .nexa-v2 .copy { margin-bottom: 0; }
-.nexa-v2 .title { font-size: 36px; line-height: .95; }
+.nexa-v2 .title { font-size: 86px; line-height: .92; }
 .nexa-v2 .subtitle { display: none; }
 .nv2-diagram {
   display: flex;
@@ -618,6 +618,8 @@ main { min-height: 0; display: grid; align-items: center; }
   box-shadow: none;
   background: transparent;
   border-radius: 0;
+  -webkit-mask-image: radial-gradient(ellipse 94% 88% at 50% 50%, black 45%, transparent 88%);
+  mask-image: radial-gradient(ellipse 94% 88% at 50% 50%, black 45%, transparent 88%);
 }
 .nv2-cards {
   display: grid;
@@ -635,7 +637,7 @@ main { min-height: 0; display: grid; align-items: center; }
 .nv2-card h3 {
   margin: 0 0 8px;
   font-family: var(--display);
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
@@ -643,8 +645,8 @@ main { min-height: 0; display: grid; align-items: center; }
 }
 .nv2-card p {
   margin: 0;
-  font-size: 13px;
-  line-height: 1.42;
+  font-size: 20px;
+  line-height: 1.38;
   font-weight: 650;
   color: rgba(255,255,255,.82);
 }
