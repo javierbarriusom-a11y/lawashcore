@@ -696,7 +696,7 @@ main { min-height: 0; display: grid; align-items: center; }
       rgba(23,31,40,.88) 50%,
       rgba(23,31,40,.97) 100%),
     linear-gradient(0deg, rgba(23,31,40,.55) 0%, transparent 18%),
-    var(--slide-bg) 4% center / auto 78% no-repeat !important;
+    var(--slide-bg) 4% bottom / auto 82% no-repeat #4a9fc8 !important;
 }
 .customer-layout--nofg {
   grid-template-columns: minmax(0, 1fr);
