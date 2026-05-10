@@ -103,6 +103,8 @@ window.DECK_SLIDES = [
     title: "NEXA POS: \nUN POS QUE COBRA, PERO QUE TAMBIÉN VENDE",
     subtitle: "NUESTRO SISTEMA DE UPSELLING EN ACCION",
     image: "assets/source-media/image22.png",
+    foreground: false,
+    theme: "nexa-pos",
     cards: [
       ["Interfaz intuitiva en kiosco o terminal ( UX avanzado)", ""],
       ["App de Usuario para gestión de  máquinas disponibles, pagar, recibir recompensas", ""],

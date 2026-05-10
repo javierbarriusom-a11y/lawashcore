@@ -593,6 +593,27 @@ main { min-height: 0; display: grid; align-items: center; }
   .hero-layout.no-foreground .stats.compact { grid-template-columns: 1fr; }
 }
 
+/* ── Slide 7: NEXA POS — TPV visible on left ── */
+.nexa-pos {
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.08) 0%,
+      rgba(23,31,40,.55) 38%,
+      rgba(23,31,40,.97) 52%,
+      rgba(0,77,133,.99) 100%),
+    linear-gradient(0deg, rgba(23,31,40,.3), transparent 55%),
+    var(--slide-bg) left center / cover no-repeat !important;
+}
+.image-cards-layout--nofg {
+  grid-template-columns: 0.85fr 1.15fr;
+}
+.icl-gap { /* transparent left column — shows background */ }
+.image-cards-layout--nofg .card h3,
+.image-cards-layout .card h3 {
+  color: var(--wash-green);
+  font-size: 36px;
+}
+
 /* ── Nexa V2 ─────────────────────────────────── */
 .nexa-v2 {
   display: grid;

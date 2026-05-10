@@ -193,6 +193,12 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "image-cards") {
+    if (slide.foreground === false) {
+      return `<div class="image-cards-layout image-cards-layout--nofg">
+        <div class="icl-gap"></div>
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards, "three-col")}</div>
+      </div>`;
+    }
     return `<div class="image-cards-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards, "three-col")}</div>
       ${media(slide.image, "Nexa POS")}
