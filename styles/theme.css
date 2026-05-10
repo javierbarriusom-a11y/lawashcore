@@ -624,46 +624,48 @@ main { min-height: 0; display: grid; align-items: center; }
     var(--slide-bg) center / cover no-repeat !important;
 }
 .upsell-layout--nofg {
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
 }
 .usl-stats {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   height: 100%;
-  padding-top: 16px;
 }
-.nexa-upsell .stats {
+.big-stats {
+  display: flex;
   flex-direction: column;
-  gap: 28px;
-  background: none;
+  gap: 36px;
+  width: 100%;
 }
-.nexa-upsell .stat {
-  background: none;
-  border-radius: 0;
-  padding: 0;
+.big-stat {
   display: flex;
   flex-direction: column;
 }
-.nexa-upsell .stat strong {
+.big-stat strong {
   display: block;
   font-family: var(--display);
-  font-size: 108px;
+  font-size: 200px;
   line-height: 1;
   font-weight: 400;
   color: var(--wash-green);
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--wash-green);
+  padding-bottom: 14px;
+  border-bottom: 3px solid var(--wash-green);
 }
-.nexa-upsell .stat span {
+.big-stat span {
   display: block;
-  margin-top: 10px;
-  font-size: 17px;
+  margin-top: 14px;
+  font-size: 20px;
   line-height: 1.45;
-  color: rgba(255,255,255,.88);
+  color: rgba(255,255,255,.9);
   font-weight: 500;
 }
-.nexa-upsell .stat-icon { display: none; }
+.hero-action--right {
+  left: auto;
+  right: 72px;
+  text-align: right;
+}
 
 /* ── Nexa V2 ─────────────────────────────────── */
 .nexa-v2 {

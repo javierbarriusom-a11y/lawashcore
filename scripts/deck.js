@@ -56,6 +56,14 @@ function renderStats(stats = [], compact = false) {
     </article>`).join("")}</div>`;
 }
 
+function renderBigStats(stats = []) {
+  return `<div class="big-stats">${stats.map((stat) => `
+    <div class="big-stat">
+      <strong>${lines(stat[0])}</strong>
+      ${stat[1] ? `<span>${lines(stat[1])}</span>` : ""}
+    </div>`).join("")}</div>`;
+}
+
 function renderAction(action) {
   if (!action) return "";
   return `<a class="hero-action" href="${safe(action[1])}" target="_blank" rel="noopener">${lines(action[0])}</a>`;
@@ -208,8 +216,8 @@ function layout(slide) {
     if (slide.foreground === false) {
       return `<div class="upsell-layout upsell-layout--nofg">
         <div>${titleBlock(slide, true)}${renderCards(slide.cards, "two-col")}</div>
-        <div class="usl-stats">${renderStats(slide.stats, true)}</div>
-        ${renderAction(slide.action)}
+        <div class="usl-stats">${renderBigStats(slide.stats)}</div>
+        ${slide.action ? `<a class="hero-action hero-action--right" href="${safe(slide.action[1])}" target="_blank" rel="noopener">${lines(slide.action[0])}</a>` : ""}
       </div>`;
     }
     return `<div class="upsell-layout">
