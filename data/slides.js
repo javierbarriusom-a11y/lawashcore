@@ -119,16 +119,20 @@ window.DECK_SLIDES = [
     section: "Nexa",
     eyebrow: "TECNOLOGIA",
     title: "NEXA POS: UPSELLING automático.\nTUS CLIENTES QUERRÁN COMPRAR MÁS",
-    subtitle: "FLUJO DE NAVEGACION INTUITIVO QUE  INVITA AL USUARIO A AÑADIR SERVICIOS ADICIonales",
+    subtitle: "FLUJO DE NAVEGACIÓN INTUITIVO QUE INVITA AL USUARIO A AÑADIR SERVICIOS ADICIONALES",
     image: "assets/source-media/image27.png",
+    foreground: false,
+    theme: "nexa-upsell",
     cards: [
-      ["Algoritmos de IA para incrementar VENTAS", ""],
-      ["Códigos promocionales integrados en la central de pago.", ""],
-      ["Ofertas dinámicas basadas en el comportamiento del usuario.", ""],
-      ["UP-SELLING de productos", ""]
+      ["Algoritmos de IA para incrementar ventas", ""],
+      ["Códigos promocionales integrados en la central de pago", ""],
+      ["Ofertas dinámicas basadas en el comportamiento del usuario", ""],
+      ["Up-selling de productos y servicios adicionales", ""],
+      ["Programa de fidelización y gamificación del consumidor", ""]
     ],
-    stats: [["+15%", "Recomendación del ticket promedio frente al entorno del sector."], ["+20%", "Crecimiento en la facturación media gracias a la optimización de uso."]],
-    foot: "¿QUIERES VER A NEXA EN MOVIMIENTO?",
+    stats: [["+15%", "Incremento del ticket promedio frente al estándar del sector."], ["+20%", "Crecimiento en la facturación global gracias a la optimización de uso."]],
+    action: ["¿QUIERES VER A NEXA EN MOVIMIENTO?", "https://lawash.es/club-la-wash/"],
+    foot: false,
     layout: "upsell"
   },
   {

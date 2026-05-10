@@ -205,6 +205,13 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "upsell") {
+    if (slide.foreground === false) {
+      return `<div class="upsell-layout upsell-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards, "two-col")}</div>
+        <div class="usl-stats">${renderStats(slide.stats, true)}</div>
+        ${renderAction(slide.action)}
+      </div>`;
+    }
     return `<div class="upsell-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards, "two-col")}</div>
       <div>${media(slide.image, "Nexa POS upselling")}${renderStats(slide.stats, true)}</div>
