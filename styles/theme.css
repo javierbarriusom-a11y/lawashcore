@@ -461,7 +461,8 @@ main { min-height: 0; display: grid; align-items: center; }
   grid-template-columns: minmax(0, 1fr);
   max-width: 68%;
 }
-.app-layout .media img { max-height: 68svh; }
+.app-layout .media img { max-height: 68svh; background: none; box-shadow: none; border-radius: 0; }
+.app-layout--nofg { grid-template-columns: minmax(0, 1fr); }
 .dashboard-layout .media img,
 .upsell-layout .media img { max-height: 46svh; }
 
