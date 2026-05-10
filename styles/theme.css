@@ -459,6 +459,7 @@ main { min-height: 0; display: grid; align-items: center; }
 }
 .services-layout--nofg {
   grid-template-columns: minmax(0, 1fr);
+  max-width: 68%;
 }
 .app-layout .media img { max-height: 68svh; }
 .dashboard-layout .media img,
