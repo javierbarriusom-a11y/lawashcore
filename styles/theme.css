@@ -157,8 +157,8 @@ main { min-height: 0; display: grid; align-items: center; }
   gap: 22px;
   border-color: currentColor;
 }
-.slide-head { padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.22); }
-.slide-foot { padding-top: 14px; border-top: 1px solid rgba(255,255,255,.22); color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.35; }
+.slide-head { padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.22); background: linear-gradient(180deg, rgba(23,31,40,.92) 0%, rgba(23,31,40,.60) 100%); }
+.slide-foot { padding-top: 14px; border-top: 1px solid rgba(255,255,255,.22); color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.35; background: linear-gradient(0deg, rgba(23,31,40,.92) 0%, rgba(23,31,40,.60) 100%); }
 .mark { width: 126px; height: 34px; display: flex; align-items: center; }
 .mark img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .head-meta, .head-count, .eyebrow {

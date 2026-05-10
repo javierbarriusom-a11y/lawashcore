@@ -185,6 +185,7 @@ window.DECK_SLIDES = [
     eyebrow: "NEXA APP",
     title: "NEXA APP",
     image: "assets/source-media/image40.png",
+    foreground: false,
     cards: [
       ["GEOLOCALIZACION", ""],
       ["PROMOCIONES", ""],

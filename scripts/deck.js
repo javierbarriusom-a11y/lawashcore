@@ -260,6 +260,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "app") {
+    if (slide.foreground === false) {
+      return `<div class="app-layout app-layout--nofg">
+        <div>${titleBlock(slide, true)}${renderCards(slide.cards, "two-col")}</div>
+      </div>`;
+    }
     return `<div class="app-layout">
       <div>${titleBlock(slide, true)}${renderCards(slide.cards, "two-col")}</div>
       ${media(slide.image, "Nexa App")}
