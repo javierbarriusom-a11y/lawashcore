@@ -49,7 +49,7 @@ window.DECK_SLIDES = [
     section: "GO",
     eyebrow: "Ubicación",
     title: "POTENCIA TU NEGOCIO",
-    image: "../assets/source-media/image42.png",
+    image: "../assets/source-media/potencia tu negocio.jpg",
     foreground: false,
     bullets: [
       "Genera sinergias positivas con negocios existentes.",
