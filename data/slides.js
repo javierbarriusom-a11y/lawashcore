@@ -300,7 +300,7 @@ window.DECK_SLIDES = [
   {
     section: "Cierre",
     eyebrow: "Siguiente paso",
-    title: "ABRE UNA FRANQUCIA CON NOSOTROS AQUI",
+    title: "¿ESTÁS LISTO PARA DAR EL SIGUIENTE PASO?",
     image: "assets/source-media/image58.png",
     qr: "assets/source-media/image59.png",
     layout: "cta"
