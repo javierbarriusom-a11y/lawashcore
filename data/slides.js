@@ -311,13 +311,15 @@ window.DECK_SLIDES = [
   {
     section: "Cierre",
     eyebrow: "La Wash",
-    image: "assets/source-media/image60.png",
     socials: [
       ["assets/source-media/image61.png", "https://www.facebook.com/lawash/"],
       ["assets/source-media/image62.png", "https://www.instagram.com/lawash.es/"],
       ["assets/source-media/image63.png", "https://www.linkedin.com/company/lawash/"],
       ["assets/source-media/image64.png", "https://www.youtube.com/c/LaWash"]
     ],
+    closingLogo: "assets/source-media/lawash-logo.png",
+    closingAddress: "C/ Frederic Mompou, 4a, 3º 2ª 08960\nSant Just Desvern, Barcelona\nT. 666 24 24 60\n\nlawash.es",
+    noBackground: true,
     layout: "closing"
   }
 ];

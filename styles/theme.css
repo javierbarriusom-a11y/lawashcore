@@ -843,11 +843,30 @@ main:has(.cta-layout) { align-items: stretch; }
 }
 .cta-link:hover { color: var(--wash-green); }
 .closing-layout {
-  display: grid;
-  place-items: end center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
   height: 100%;
 }
-.socials { display: flex; justify-content: center; gap: 20px; align-items: center; }
+.closing-logo {
+  width: clamp(180px, 26%, 320px);
+  opacity: 0.15;
+  filter: brightness(10);
+  object-fit: contain;
+}
+.closing-address {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255,255,255,.6);
+  text-align: center;
+  line-height: 1.7;
+}
+.socials { display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 16px; }
 .socials a { display: block; }
 .socials img {
   width: 80px;

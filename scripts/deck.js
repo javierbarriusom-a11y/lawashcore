@@ -368,7 +368,10 @@ function layout(slide) {
     const socialsHTML = (slide.socials || []).map(([src, href]) =>
       `<a href="${safe(href)}" target="_blank" rel="noopener"><img src="${safe(src)}" alt=""></a>`
     ).join("");
+    const addrHTML = (slide.closingAddress || "").split("\n").map(l => l.trim() === "" ? `<br>` : `<span>${safe(l)}</span>`).join("");
     return `<div class="closing-layout">
+      ${slide.closingLogo ? `<img class="closing-logo" src="${safe(slide.closingLogo)}" alt="La Wash">` : ""}
+      ${slide.closingAddress ? `<div class="closing-address">${addrHTML}</div>` : ""}
       <div class="socials">${socialsHTML}</div>
     </div>`;
   }
