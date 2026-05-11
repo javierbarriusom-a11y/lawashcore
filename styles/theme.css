@@ -1303,7 +1303,7 @@ main:has(.cta-layout) { align-items: stretch; }
   height: 100%;
   min-height: 0;
 }
-.go-locations .cards { margin-top: 0; gap: 10px; }
+.go-locations .cards { margin-top: 0; gap: 10px; max-width: 50%; }
 .go-locations .card { padding: 18px 20px; }
 .go-locations .card-icon { width: 54px; height: 54px; margin-bottom: 10px; }
 .gol-bullets {
