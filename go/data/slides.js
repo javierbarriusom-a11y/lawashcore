@@ -57,13 +57,14 @@ window.DECK_SLIDES = [
       "Configuración abierta o cerrada según ubicación.",
       "Formato compacto orientado a implantaciones ágiles."
     ],
+    theme: "go-cards-accent",
     cards: [
-      ["GASOLINERAS",         "Áreas de servicio con alto tráfico captivo.",      "⛽"],
-      ["SUPERMERCADOS",       "Complementa la compra semanal del cliente.",        "🛒"],
-      ["CENTROS COMERCIALES", "Servicio de conveniencia diferenciador.",           "🏬"],
-      ["PARKINGS PÚBLICOS",   "Ingresos adicionales en espacios ociosos.",         "🅿️"],
-      ["CAMPINGS",            "Servicio imprescindible en temporada alta.",        "⛺"],
-      ["ZONAS DE TRÁNSITO",   "Túneles de lavado y zonas de tránsito.",           "🛣️"]
+      ["GASOLINERAS",         "Áreas de servicio con alto tráfico captivo.",      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M3 22V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16'/><line x1='3' y1='22' x2='15' y2='22'/><rect x='5' y='8' width='8' height='5' rx='1'/><path d='M15 6h2a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2v6a1 1 0 0 1-2 0v-5a2 2 0 0 1-2-2V8'/></svg>"],
+      ["SUPERMERCADOS",       "Complementa la compra semanal del cliente.",        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='21' r='1'/><circle cx='20' cy='21' r='1'/><path d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6'/></svg>"],
+      ["CENTROS COMERCIALES", "Servicio de conveniencia diferenciador.",           "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='7' width='20' height='14' rx='2'/><path d='M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2'/><line x1='12' y1='12' x2='12' y2='16'/><line x1='10' y1='14' x2='14' y2='14'/></svg>"],
+      ["PARKINGS PÚBLICOS",   "Ingresos adicionales en espacios ociosos.",         "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='3' width='18' height='18' rx='2'/><path d='M9 17V7h4a3 3 0 0 1 0 6H9'/></svg>"],
+      ["CAMPINGS",            "Servicio imprescindible en temporada alta.",        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3L2 21h20L12 3z'/><path d='M12 8l-3 13'/><path d='M12 8l3 13'/></svg>"],
+      ["ZONAS DE TRÁNSITO",   "Túneles de lavado y zonas de tránsito.",           "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v9a2 2 0 0 1-2 2h-2'/><circle cx='7' cy='17' r='2'/><circle cx='17' cy='17' r='2'/></svg>"]
     ],
     layout: "go-locations"
   },
