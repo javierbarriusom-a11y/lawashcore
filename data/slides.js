@@ -314,7 +314,7 @@ window.DECK_SLIDES = [
       ["assets/source-media/image63.png", "https://www.linkedin.com/company/lawash/"],
       ["assets/source-media/image64.png", "https://www.youtube.com/c/LaWash"]
     ],
-    closingLogo: "assets/source-media/lawash-logo.png",
+    closingLogo: "assets/source-media/lawash-logo-white.png",
     closingAddress: "C/ Frederic Mompou, 4a, 3º 2ª 08960\nSant Just Desvern, Barcelona\nT. 666 24 24 60\n\nlawash.es",
     noBackground: true,
     layout: "closing"
