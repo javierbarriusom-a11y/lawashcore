@@ -228,8 +228,8 @@ window.DECK_SLIDES = [
     theme: "soporte-bg",
     cards: [
       ["SOPORTE 24X7", ""],
-      ["CALL CENTER PROPIO 365 DÍAS", "Call center y SAT propio\n365 días al año\n92% de resolución remota"],
-      ["SOPORTE TÉCNICO", ""]
+      ["CALL CENTER PROPIO 365 DÍAS", "Call center y SAT propio"],
+      ["SOPORTE TÉCNICO", "365 días al año\n92% de resolución remota"]
     ],
     layout: "support"
   },
