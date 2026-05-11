@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>La Wash GO | Módulo lavandería autoservicio compacto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Presentación La Wash GO — módulo de lavandería autoservicio compacto. Transforma tu espacio en ingresos.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/theme.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span>LA WASH</span> GO</div>
+  <div class="section-status" aria-live="polite">Sección <strong id="sectionName">Inicio</strong></div>
+  <nav class="nav-pills" aria-label="Capítulos">
+    <button data-jump="0">Inicio</button>
+    <button data-jump="2">GO</button>
+    <button data-jump="6">Nexa</button>
+    <button data-jump="11">Inversión</button>
+    <button data-jump="16">Cierre</button>
+  </nav>
+</header>
+<deck-stage id="deck" aria-live="polite"></deck-stage>
+<div class="controls" aria-label="Navegación">
+  <button id="home" type="button">Inicio</button>
+  <button id="prev" type="button">Atrás</button>
+  <div class="counter" id="counter">01 / 01</div>
+  <button id="next" type="button">Siguiente</button>
+</div>
+<div class="progress"><span id="progress"></span></div>
+<script src="data/slides.js"></script>
+<script src="scripts/deck.js"></script>
+</body>
+</html>
