@@ -62,6 +62,7 @@ window.DECK_SLIDES = [
     title: "Rompemos las reglas de la franquicia",
     subtitle: "MAXIMIZAMOS TU RENTABILIDAD. \nTU NEGOCIO ES TUYO",
     image: "assets/source-media/image18.png",
+    foreground: false,
     stats: [
       ["0€", "Canon de entrada"],
       ["10", "Años de contrato"],

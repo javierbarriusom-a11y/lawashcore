@@ -168,6 +168,11 @@ function layout(slide) {
   }
   if (slide.layout === "process") return renderProcess(slide);
   if (slide.layout === "metrics") {
+    if (slide.foreground === false) {
+      return `<div class="metrics-layout metrics-layout--nofg">
+        <div>${titleBlock(slide)}${renderStats(slide.stats)}</div>
+      </div>`;
+    }
     return `<div class="metrics-layout">
       <div>${titleBlock(slide)}${renderStats(slide.stats)}</div>
       ${media(slide.image, "Lavandería La Wash")}
