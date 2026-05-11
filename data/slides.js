@@ -258,7 +258,7 @@ window.DECK_SLIDES = [
         bullets: ["PREMIO AL MEJOR SERVICIO DEL AÑO", "PREMIO A LA MEJOR FRANQUICIA DEL AÑO"]
       },
       {
-        image: "assets/source-media/image51.png",
+        image: "assets/source-media/image52.png",
         text: "La Wash se consolida como referente europeo al liderar la modernización de las lavanderías autoservicio, con el aval de Forbes."
       }
     ],

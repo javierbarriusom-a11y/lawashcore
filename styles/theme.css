@@ -641,9 +641,9 @@ main:has(.pv2-layout) { align-items: start; }
 }
 .pv2-card-text {
   margin: 0;
-  font-size: 17px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.4;
   color: rgba(255,255,255,.9);
 }
 .pv2-cols {
@@ -683,11 +683,11 @@ main:has(.pv2-layout) { align-items: start; }
   gap: 10px;
 }
 .pv2-bullets li {
-  font-size: 15px;
+  font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--wash-white);
-  padding-left: 16px;
+  padding-left: 26px;
   position: relative;
   line-height: 1.3;
 }
