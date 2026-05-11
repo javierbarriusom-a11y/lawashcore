@@ -265,6 +265,7 @@ window.DECK_SLIDES = [
       "La Wash se consolida como referente europeo al liderar la modernización de las lavanderías autoservicio, con el aval de Forbes.",
       "Nuestro proceso probado bate a los mercados en los que operamos y mejora continuamente con sus mejores prácticas de negocio."
     ],
+    noBackground: true,
     layout: "press-v2"
   },
   {
