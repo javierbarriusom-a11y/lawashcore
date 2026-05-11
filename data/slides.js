@@ -252,21 +252,9 @@ window.DECK_SLIDES = [
     eyebrow: "Aval",
     title: "Hablan de nosotros….Y con razón.",
     subtitle: "EN ESPAÑA, PORTUGAL, IRLANDA, ITALIA Y FRANCIA",
-    awards: "assets/source-media/image50.png",
-    awardBullets: ["PREMIO AL MEJOR SERVICIO DEL AÑO", "PREMIO A LA MEJOR FRANQUICIA DEL AÑO"],
-    quote: [
-      "La tecnología nos permite operar a muy bajo costo, de manera muy eficiente. Y lo más importante: nos mantiene conectados con el cliente.",
-      "Javier Llacuna",
-      "CEO DE LA WASH"
-    ],
-    forbesLogo: "assets/source-media/image51.png",
-    pressImage: "assets/source-media/image52.png",
-    pressTexts: [
-      "La Wash se consolida como referente europeo al liderar la modernización de las lavanderías autoservicio, con el aval de Forbes.",
-      "Nuestro proceso probado bate a los mercados en los que operamos y mejora continuamente con sus mejores prácticas de negocio."
-    ],
     noBackground: true,
-    layout: "press-v2"
+    layout: "hero",
+    foreground: false
   },
   {
     section: "Prueba",
