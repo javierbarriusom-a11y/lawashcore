@@ -48,7 +48,7 @@ window.DECK_SLIDES = [
   {
     section: "GO",
     eyebrow: "Ubicación",
-    title: "ZONAS DE TRANSITO",
+    title: "POTENCIA TU NEGOCIO",
     subtitle: "CAPTURA DEMANDA DE PROXIMIDAD",
     image: "../assets/source-media/image42.png",
     foreground: false,
