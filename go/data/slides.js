@@ -49,17 +49,23 @@ window.DECK_SLIDES = [
     section: "GO",
     eyebrow: "Ubicación",
     title: "POTENCIA TU NEGOCIO",
-    subtitle: "CAPTURA DEMANDA DE PROXIMIDAD",
     image: "../assets/source-media/image42.png",
     foreground: false,
-    cards: [
-      ["Genera sinergias", "Genera sinergias positivas con negocios existentes."],
-      ["Diseño exclusivo", "Diseño exclusivo y adaptable a distintos entornos."],
-      ["Configuración flexible", "Configuración abierta o cerrada según ubicación."],
-      ["Formato compacto", "Formato compacto orientado a implantaciones ágiles."]
+    bullets: [
+      "Genera sinergias positivas con negocios existentes.",
+      "Diseño exclusivo y adaptable a distintos entornos.",
+      "Configuración abierta o cerrada según ubicación.",
+      "Formato compacto orientado a implantaciones ágiles."
     ],
-    foot: "Potencia tu negocio",
-    layout: "dashboard"
+    cards: [
+      ["GASOLINERAS",         "Áreas de servicio con alto tráfico captivo.",      "⛽"],
+      ["SUPERMERCADOS",       "Complementa la compra semanal del cliente.",        "🛒"],
+      ["CENTROS COMERCIALES", "Servicio de conveniencia diferenciador.",           "🏬"],
+      ["PARKINGS PÚBLICOS",   "Ingresos adicionales en espacios ociosos.",         "🅿️"],
+      ["CAMPINGS",            "Servicio imprescindible en temporada alta.",        "⛺"],
+      ["ZONAS DE TRÁNSITO",   "Túneles de lavado y zonas de tránsito.",           "🛣️"]
+    ],
+    layout: "go-locations"
   },
   // 4 – Dos formas de generar ingresos  (NEW – PDF p.5)
   {

@@ -86,6 +86,22 @@ function media(src, alt = "") {
   return `<figure class="media"><img src="${safe(src)}" alt="${safe(alt)}"></figure>`;
 }
 
+// ── Go Locations layout renderer ────────────────────────────────────────────
+function renderGoLocations(slide) {
+  const bulletsHTML = (slide.bullets || []).map((b) => `<li>${safe(b)}</li>`).join("");
+  const cardsHTML = (slide.cards || []).map((card) => `
+    <article class="card go-loc-card">
+      ${card[2] ? `<span class="go-loc-icon">${card[2]}</span>` : ""}
+      <h3>${lines(card[0])}</h3>
+      ${card[1] ? `<p>${lines(card[1])}</p>` : ""}
+    </article>`).join("");
+  return `<div class="go-locations">
+    ${titleBlock(slide, true)}
+    <ul class="gol-bullets">${bulletsHTML}</ul>
+    <div class="cards three-col">${cardsHTML}</div>
+  </div>`;
+}
+
 // ── Go Win-Win layout renderer ──────────────────────────────────────────────
 function renderGoWinwin(slide) {
   const ww = slide.winwin || {};
@@ -421,6 +437,7 @@ function layout(slide) {
     </div>`;
   }
   // ── GO-specific layouts ──────────────────────────────────────────────────
+  if (slide.layout === "go-locations") return renderGoLocations(slide);
   if (slide.layout === "go-winwin") return renderGoWinwin(slide);
   if (slide.layout === "go-amortize") return renderGoAmortize(slide);
 
