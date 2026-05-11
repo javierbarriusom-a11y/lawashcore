@@ -338,7 +338,7 @@ function layout(slide) {
       <div class="pv2-2cols">
         ${cards.map((card) => `
           <div class="pv2-card">
-            ${(card.images || (card.image ? [card.image] : [])).map((src) => `<img class="pv2-card-img" src="${safe(src)}" alt="">`).join("")}
+            <img class="pv2-card-img" src="${safe(card.image)}" alt="">
             <div class="pv2-card-body">
               ${card.bullets
                 ? `<ul class="pv2-bullets">${card.bullets.map((b) => `<li>${safe(b)}</li>`).join("")}</ul>`
