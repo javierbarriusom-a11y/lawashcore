@@ -97,8 +97,10 @@ function renderGoLocations(slide) {
     </article>`).join("");
   return `<div class="go-locations">
     ${titleBlock(slide, true)}
-    <ul class="gol-bullets">${bulletsHTML}</ul>
-    <div class="cards two-col">${cardsHTML}</div>
+    <div class="gol-body">
+      <div class="cards two-col">${cardsHTML}</div>
+      <ul class="gol-bullets">${bulletsHTML}</ul>
+    </div>
   </div>`;
 }
 
