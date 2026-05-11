@@ -240,9 +240,9 @@ window.DECK_SLIDES = [
     image: "assets/source-media/image47.png",
     foreground: false,
     stats: [
-      ["+215K", "USUARIOS ATENDIDOS\nSATISFACTORIAMENTE"],
-      ["365 DÍAS", "ATENCIÓN SAT 365 / CENTRO DEDICADO"],
-      ["4 PERSONAS", "4 personas dedicadas exclusivamente A AYUDARTE"]
+      ["+215K", "Usuarios atendidos satisfactoriamente"],
+      ["365 DÍAS", "Atención SAT 365 días / Centro dedicado"],
+      ["4 PERSONAS", "Dedicadas exclusivamente a ayudarte"]
     ],
     cards: [
       ["ATENCIÓN PARA TU CLIENTE", "Atención completa a TUS CLIENTES gestionada por nuestro equipo"],
