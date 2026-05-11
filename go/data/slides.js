@@ -5,7 +5,7 @@ window.DECK_SLIDES = [
     eyebrow: "Producto · La Wash GO",
     title: "TRANSFORMA TU ESPACIO EN INGRESOS",
     subtitle: "La lavandería autoservicio más rentable del mercado, ahora en formato modular compacto. Sin inversión inicial, sin personal, sin complicaciones.",
-    image: "../assets/source-media/image2.png",
+    image: "../assets/source-media/go-module-gasolinera.jpg",
     foreground: false,
     action: ["descubre AQUÍ Por qué somos diferentes", "https://lawash.es/masterlawash/"],
     layout: "hero"
