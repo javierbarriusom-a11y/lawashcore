@@ -585,7 +585,7 @@ main { min-height: 0; display: grid; align-items: center; }
 .press-media .media img { max-height: 310px; }
 
 /* ── Press V2 layout ── */
-main:has(.pv2-layout) { align-items: start; }
+main:has(.pv2-layout) { align-items: center; }
 .pv2-layout {
   display: flex;
   flex-direction: column;
