@@ -600,15 +600,18 @@ main { min-height: 0; display: grid; align-items: center; }
 
 /* ── Full-bleed image slides (bgonly) ── */
 .pptx-imgbg {
-  background: var(--slide-bg) center / cover no-repeat !important;
+  background: #111 !important;
 }
-.bgonly-title {
-  position: absolute;
-  bottom: 72px;
-  left: 72px;
-  z-index: 2;
+.bgonly-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  background: transparent;
 }
-.bgonly-title .title { font-size: 72px; }
 
 .cta-layout .qr {
   width: 210px;

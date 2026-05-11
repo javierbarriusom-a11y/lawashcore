@@ -333,7 +333,7 @@ function layout(slide) {
   }
   if (slide.layout === "image-only") return imageOnly(slide);
   if (slide.layout === "bgonly") {
-    return slide.title ? `<div class="bgonly-title">${titleBlock(slide, true)}</div>` : ``;
+    return `<img class="bgonly-img" src="${safe(slide.image)}" alt="">`;
   }
   if (slide.layout === "cta") {
     return `<div class="cta-layout">

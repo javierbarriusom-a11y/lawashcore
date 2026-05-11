@@ -265,7 +265,6 @@ window.DECK_SLIDES = [
   {
     section: "Prueba",
     eyebrow: "Control",
-    title: "NEXA Control 360 de tu negocio",
     image: "assets/source-media/image54.png",
     theme: "pptx-imgbg",
     layout: "bgonly"
