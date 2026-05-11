@@ -90,15 +90,15 @@ function media(src, alt = "") {
 function renderGoLocations(slide) {
   const bulletsHTML = (slide.bullets || []).map((b) => `<li>${safe(b)}</li>`).join("");
   const cardsHTML = (slide.cards || []).map((card) => `
-    <article class="card go-loc-card">
-      ${card[2] ? `<span class="go-loc-icon">${card[2]}</span>` : ""}
+    <article class="card">
+      ${card[2] ? `<span class="card-icon">${card[2]}</span>` : ""}
       <h3>${lines(card[0])}</h3>
       ${card[1] ? `<p>${lines(card[1])}</p>` : ""}
     </article>`).join("");
   return `<div class="go-locations">
     ${titleBlock(slide, true)}
     <ul class="gol-bullets">${bulletsHTML}</ul>
-    <div class="cards three-col">${cardsHTML}</div>
+    <div class="cards two-col">${cardsHTML}</div>
   </div>`;
 }
 
