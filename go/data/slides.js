@@ -7,7 +7,7 @@ window.DECK_SLIDES = [
     subtitle: "La lavandería autoservicio más rentable del mercado, ahora en formato modular compacto. Sin inversión inicial, sin personal, sin complicaciones.",
     image: "../assets/source-media/go-module-gasolinera.jpg",
     foreground: false,
-    action: ["descubre AQUÍ Por qué somos diferentes", "https://lawash.es/masterlawash/"],
+    action: ["Descubre aquí por qué somos diferentes", "https://lawash.es/masterlawash/"],
     layout: "hero"
   },
   // 1 – Líderes  (EXISTING – idéntica a base, PDF p.2)
