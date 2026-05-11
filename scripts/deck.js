@@ -292,6 +292,24 @@ function layout(slide) {
       ${media(slide.image, "Soporte La Wash")}
     </div>`;
   }
+  if (slide.layout === "care-v2") {
+    const st = slide.bigStat || [];
+    const cardsHTML = (slide.cards || []).map((card) => `
+      <div class="cv2-card">
+        <div class="cv2-title">
+          <h3>${lines(card[0])}</h3>
+          ${(card[2] || []).map((b) => `<span class="cv2-badge">${safe(b)}</span>`).join("")}
+        </div>
+        <ul class="cv2-list">${(card[1] || "").split("\n").filter(Boolean).map((item) => `<li>${lines(item)}</li>`).join("")}</ul>
+      </div>`).join("");
+    return `<div class="cv2-layout">
+      <div class="cv2-left">
+        <strong>${lines(st[0])}</strong>
+        <span>${lines(st[1])}</span>
+      </div>
+      <div class="cv2-right">${cardsHTML}</div>
+    </div>`;
+  }
   if (slide.layout === "care") {
     if (slide.foreground === false) {
       return `<div class="care-layout care-layout--nofg">

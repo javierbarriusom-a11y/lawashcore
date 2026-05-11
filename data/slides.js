@@ -239,18 +239,13 @@ window.DECK_SLIDES = [
     eyebrow: "Atención",
     title: "UNA LAVANDERÍA a veces LLEVA TRABAJO,  pero \nATENDER A TUS CLIENTES ES LO PRIMERO.",
     image: "assets/source-media/image47.png",
-    foreground: false,
-    stats: [
-      ["+215K", "Usuarios atendidos satisfactoriamente"],
-      ["365 DÍAS", "Atención SAT 365 días / Centro dedicado"],
-      ["4 PERSONAS", "Dedicadas exclusivamente a ayudarte"]
-    ],
+    bigStat: ["+215K", "USUARIOS ATENDIDOS\nSATISFACTORIAMENTE"],
     cards: [
-      ["ATENCIÓN PARA TU CLIENTE", "Atención completa a TUS CLIENTES gestionada por nuestro equipo"],
-      ["ATENCIÓN PARA TI", ""]
+      ["ATENCIÓN PARA TI", "ATENCIÓN SAT 365 / CENTRO DEDICADO\n4 PERSONAS DEDICADAS EXCLUSIVAMENTE A AYUDARTE", ["365 DÍAS", "4 PERSONAS"]],
+      ["ATENCIÓN PARA TU CLIENTE", "ATENCIÓN COMPLETA A TUS CLIENTES GESTIONADA POR NUESTRO EQUIPO"]
     ],
     footLink: ["DESCUBRE TODOS LOS SERVICIOS QUE TENEMOS PARA TI", "https://lawash.es/lavanderia-la-wash/"],
-    layout: "care"
+    layout: "care-v2"
   },
   {
     section: "Prueba",
