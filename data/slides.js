@@ -254,11 +254,11 @@ window.DECK_SLIDES = [
     subtitle: "EN ESPAÑA, PORTUGAL, IRLANDA, ITALIA Y FRANCIA",
     pressCards: [
       {
-        image: "assets/source-media/image52.png",
+        image: "assets/source-media/image50.png",
         text: "La Wash se consolida como referente europeo al liderar la modernización de las lavanderías autoservicio, con el aval de Forbes."
       },
       {
-        images: ["assets/source-media/image50.png", "assets/source-media/image51.png"],
+        images: ["assets/source-media/image52.png", "assets/source-media/image51.png"],
         bullets: ["PREMIO AL MEJOR SERVICIO DEL AÑO", "PREMIO A LA MEJOR FRANQUICIA DEL AÑO"]
       }
     ],
