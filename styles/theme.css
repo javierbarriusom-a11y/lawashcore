@@ -612,6 +612,40 @@ main:has(.pv2-layout) { align-items: start; }
   border: none;
   border-radius: 0;
 }
+.pv2-2cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  flex: 1;
+  min-height: 0;
+}
+.pv2-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 0;
+}
+.pv2-card-img {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: contain;
+  object-position: top;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+.pv2-card-body {
+  flex-shrink: 0;
+}
+.pv2-card-text {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(255,255,255,.9);
+}
 .pv2-cols {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

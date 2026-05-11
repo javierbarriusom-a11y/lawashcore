@@ -332,11 +332,20 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "press-v2") {
-    const imgs = slide.supportImages || [];
+    const cards = slide.pressCards || [];
     return `<div class="pv2-layout">
       ${titleBlock(slide, true)}
-      <div class="pv2-img-row">
-        ${imgs.map((src) => `<img src="${safe(src)}" alt="">`).join("")}
+      <div class="pv2-2cols">
+        ${cards.map((card) => `
+          <div class="pv2-card">
+            <img class="pv2-card-img" src="${safe(card.image)}" alt="">
+            <div class="pv2-card-body">
+              ${card.bullets
+                ? `<ul class="pv2-bullets">${card.bullets.map((b) => `<li>${safe(b)}</li>`).join("")}</ul>`
+                : `<p class="pv2-card-text">${safe(card.text || "")}</p>`
+              }
+            </div>
+          </div>`).join("")}
       </div>
     </div>`;
   }
