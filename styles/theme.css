@@ -627,14 +627,14 @@ main:has(.pv2-layout) { align-items: start; }
 }
 .pv2-card-img {
   width: 100%;
-  flex: 1;
-  min-height: 0;
+  max-height: 220px;
   object-fit: contain;
   object-position: top;
   background: transparent;
   box-shadow: none;
   border: none;
   border-radius: 0;
+  flex-shrink: 0;
 }
 .pv2-card-body {
   flex-shrink: 0;
