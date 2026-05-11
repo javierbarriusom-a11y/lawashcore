@@ -355,7 +355,10 @@ function layout(slide) {
   }
   if (slide.layout === "cta") {
     return `<div class="cta-layout">
-      <div>${titleBlock(slide)}${slide.qr ? `<img class="qr" src="${safe(slide.qr)}" alt="QR">` : ""}</div>
+      <div>
+        ${titleBlock(slide)}
+        ${slide.action ? `<a class="cta-link" href="${safe(slide.action[1])}" target="_blank" rel="noopener">${safe(slide.action[0])}</a>` : ""}
+      </div>
       ${media(slide.image, "Siguiente paso")}
     </div>`;
   }

@@ -302,7 +302,7 @@ window.DECK_SLIDES = [
     eyebrow: "Siguiente paso",
     title: "¿ESTÁS LISTO PARA DAR EL SIGUIENTE PASO?",
     image: "assets/source-media/image58.png",
-    qr: "assets/source-media/image59.png",
+    action: ["Abre una franquicia con nosotros AQUÍ", "https://lawash.es/contacto/"],
     layout: "cta"
   },
   {
