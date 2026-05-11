@@ -75,6 +75,7 @@ function renderAction(action) {
 function renderCards(cards = [], className = "") {
   return `<div class="cards ${className}">${cards.map((card) => `
     <article class="card">
+      ${card[2] ? `<span class="card-icon">${card[2]}</span>` : ""}
       <h3>${lines(card[0])}</h3>
       ${card[1] ? `<p>${lines(card[1])}</p>` : ""}
     </article>`).join("")}</div>`;
