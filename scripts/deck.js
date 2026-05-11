@@ -86,14 +86,11 @@ function renderProcess(slide) {
   const path = "M5,62 C13,62 14,76 22,76 S30,24 39,24 S47,62 56,62 S67,55 73,55 S84,10 90,10";
   const nodesHTML = steps.map((step, i) => {
     const p = pos[i] || { x: 50, y: 50 };
-    const isLow = p.y >= 45;
     const hasNum = !!step[0];
     return `<div class="snode" style="left:${p.x}%;top:${p.y}%">
+      <div class="snode__above"><strong>${lines(step[1])}</strong></div>
       <div class="snode__dot${hasNum ? "" : " snode__dot--end"}">${hasNum ? safe(step[0]) : "✦"}</div>
-      <div class="snode__tag snode__tag--${isLow ? "above" : "below"}">
-        <strong>${lines(step[1])}</strong>
-        ${step[2] ? `<p>${safe(step[2])}</p>` : ""}
-      </div>
+      ${step[2] ? `<div class="snode__below"><p>${safe(step[2])}</p></div>` : ""}
     </div>`;
   }).join("");
   const quadsHTML = groups.map((g) => `<div class="wquad">
@@ -105,7 +102,7 @@ function renderProcess(slide) {
     <div class="pv2-body">
       <div class="psnake">
         <svg class="psnake__svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <path d="${path}" fill="none" stroke="rgba(19,161,220,.55)" stroke-width="1.4" stroke-dasharray="3 2" stroke-linecap="round"/>
+          <path d="${path}" fill="none" stroke="rgba(19,161,220,.55)" stroke-width="1.8" stroke-dasharray="3.5 2.5" stroke-linecap="round"/>
         </svg>
         ${nodesHTML}
       </div>
