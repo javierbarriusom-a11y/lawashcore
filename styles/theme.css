@@ -614,8 +614,8 @@ main:has(.pv2-layout) { align-items: start; }
 }
 .pv2-2cols {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 32px;
   flex: 1;
   min-height: 0;
   align-items: start;
