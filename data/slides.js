@@ -252,9 +252,13 @@ window.DECK_SLIDES = [
     eyebrow: "Aval",
     title: "Hablan de nosotros….Y con razón.",
     subtitle: "EN ESPAÑA, PORTUGAL, IRLANDA, ITALIA Y FRANCIA",
+    supportImages: [
+      "assets/source-media/image50.png",
+      "assets/source-media/image51.png",
+      "assets/source-media/image52.png"
+    ],
     noBackground: true,
-    layout: "hero",
-    foreground: false
+    layout: "press-v2"
   },
   {
     section: "Prueba",

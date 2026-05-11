@@ -332,29 +332,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "press-v2") {
-    const [quoteText, quoteAuthor, quoteRole] = slide.quote || [];
+    const imgs = slide.supportImages || [];
     return `<div class="pv2-layout">
       ${titleBlock(slide, true)}
-      <div class="pv2-cols">
-        <div class="pv2-col">
-          ${slide.awards ? `<img class="pv2-awards" src="${safe(slide.awards)}" alt="Premios La Wash">` : ""}
-          <ul class="pv2-bullets">
-            ${(slide.awardBullets || []).map((b) => `<li>${safe(b)}</li>`).join("")}
-          </ul>
-        </div>
-        <div class="pv2-col pv2-col--quote">
-          <div class="pv2-qmark">"</div>
-          <p class="pv2-qtext">${safe(quoteText || "")}</p>
-          <div class="pv2-qauthor">
-            <strong>${safe(quoteAuthor || "")}</strong>
-            <span>${safe(quoteRole || "")}</span>
-          </div>
-          ${slide.forbesLogo ? `<img class="pv2-forbes" src="${safe(slide.forbesLogo)}" alt="Forbes">` : ""}
-        </div>
-        <div class="pv2-col">
-          ${slide.pressImage ? `<img class="pv2-press-img" src="${safe(slide.pressImage)}" alt="La Wash en prensa">` : ""}
-          ${(slide.pressTexts || []).map((t) => `<p class="pv2-press-text">${safe(t)}</p>`).join("")}
-        </div>
+      <div class="pv2-img-row">
+        ${imgs.map((src) => `<img src="${safe(src)}" alt="">`).join("")}
       </div>
     </div>`;
   }
