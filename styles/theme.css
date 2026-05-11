@@ -649,7 +649,7 @@ main { min-height: 0; display: grid; align-items: center; }
       rgba(0,77,133,.50) 0%,
       rgba(23,31,40,.70) 50%,
       rgba(23,31,40,.80) 100%),
-    var(--slide-bg) center / cover no-repeat !important;
+    var(--slide-bg) right center / auto 85% no-repeat !important;
 }
 .upsell-layout--nofg {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
