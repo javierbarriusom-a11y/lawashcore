@@ -216,13 +216,13 @@ main { min-height: 0; display: grid; align-items: center; }
 .cta-layout {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   height: 100%;
   width: 100%;
-  text-align: center;
+  max-width: 700px;
 }
-.cta-top { width: 100%; text-align: left; }
+.cta-top { width: 100%; }
 .cta-logo-watermark {
   display: block;
   width: clamp(200px, 28%, 340px);
