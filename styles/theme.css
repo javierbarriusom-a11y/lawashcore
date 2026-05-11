@@ -853,9 +853,9 @@ main:has(.cta-layout) { align-items: stretch; }
   height: 100%;
 }
 .closing-logo {
-  width: clamp(240px, 32%, 420px);
-  opacity: 0.35;
-  mix-blend-mode: screen;
+  width: clamp(240px, 36%, 480px);
+  opacity: 1;
+  mix-blend-mode: normal;
   object-fit: contain;
 }
 .closing-address {
@@ -864,7 +864,7 @@ main:has(.cta-layout) { align-items: stretch; }
   gap: 4px;
   font-size: 30px;
   font-weight: 500;
-  color: rgba(255,255,255,.6);
+  color: rgba(255,255,255,1);
   text-align: center;
   line-height: 1.7;
 }
