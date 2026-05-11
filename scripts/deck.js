@@ -354,12 +354,14 @@ function layout(slide) {
     return `<img class="bgonly-img" src="${safe(slide.image)}" alt="">`;
   }
   if (slide.layout === "cta") {
+    const addressLines = slide.ctaAddress ? slide.ctaAddress.split("\n").map(l => l.trim() === "" ? `<br>` : `<span>${safe(l)}</span>`).join("") : "";
     return `<div class="cta-layout">
-      <div>
+      <div class="cta-top">
         ${titleBlock(slide)}
         ${slide.action ? `<a class="cta-link" href="${safe(slide.action[1])}" target="_blank" rel="noopener">${safe(slide.action[0])}</a>` : ""}
       </div>
-      ${media(slide.image, "Siguiente paso")}
+      ${slide.ctaLogo ? `<img class="cta-logo-watermark" src="${safe(slide.ctaLogo)}" alt="La Wash">` : ""}
+      ${slide.ctaAddress ? `<div class="cta-address">${addressLines}</div>` : ""}
     </div>`;
   }
   if (slide.layout === "closing") {

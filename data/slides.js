@@ -303,7 +303,9 @@ window.DECK_SLIDES = [
     title: "¿ESTÁS LISTO PARA DAR EL SIGUIENTE PASO?",
     subtitle: "Únete a La Wash y descubre una nueva y emocionante oportunidad de inversión en el sector de las lavanderías autoservicio.\n\nEn La Wash® te ayudamos en todo el proceso, desde la ubicación, las instalaciones y obras, pasando por el diseño de lavandería autoservicio a la medida de tus posibilidades. Además de un seguimiento y apoyo continuo una vez abierto el negocio.",
     action: ["Abre una franquicia con nosotros AQUÍ", "https://lawash.es/contacto/"],
-    background: "assets/source-media/cta-bg.jpg",
+    ctaLogo: "assets/source-media/lawash-logo.png",
+    ctaAddress: "C/ Frederic Mompou,\n4a, 3º 2ª 08960\nSant Just Desvern, Barcelona\nT. 666 24 24 60\n\nlawash.es",
+    noBackground: true,
     layout: "cta"
   },
   {

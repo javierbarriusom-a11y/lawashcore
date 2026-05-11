@@ -206,13 +206,41 @@ main { min-height: 0; display: grid; align-items: center; }
 .services-layout,
 .support-layout,
 .care-layout,
-.press-layout,
-.cta-layout {
+.press-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr);
   gap: 38px;
   align-items: center;
   min-height: 0;
+}
+.cta-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.cta-top { width: 100%; text-align: left; }
+.cta-logo-watermark {
+  display: block;
+  width: clamp(200px, 28%, 340px);
+  opacity: 0.15;
+  filter: brightness(10);
+  object-fit: contain;
+  margin: auto;
+}
+.cta-address {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255,255,255,.6);
+  text-align: center;
+  line-height: 1.7;
+  padding-bottom: 8px;
 }
 .hero-layout.no-foreground {
   grid-template-columns: minmax(0, 1fr);
@@ -586,6 +614,7 @@ main { min-height: 0; display: grid; align-items: center; }
 
 /* ── Press V2 layout ── */
 main:has(.pv2-layout) { align-items: stretch; }
+main:has(.cta-layout) { align-items: stretch; }
 .pv2-layout {
   display: flex;
   flex-direction: column;
