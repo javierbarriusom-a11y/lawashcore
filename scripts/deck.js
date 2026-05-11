@@ -333,8 +333,13 @@ function layout(slide) {
   }
   if (slide.layout === "press-v2") {
     const [quoteText, quoteAuthor, quoteRole] = slide.quote || [];
+    const titleParts = (slide.title || "").split(/….*/);
+    const titleHighlight = slide.title?.match(/….+/)?.[0] || "";
     return `<div class="pv2-layout">
-      ${titleBlock(slide, true)}
+      <div class="pv2-banner">
+        <p class="pv2-title-main"><em>${safe(titleParts[0] || "")}</em>${safe(titleHighlight)}</p>
+        <p class="pv2-subtitle">${safe(slide.subtitle || "")}</p>
+      </div>
       <div class="pv2-cols">
         <div class="pv2-col">
           ${slide.awards ? `<img class="pv2-awards" src="${safe(slide.awards)}" alt="Premios La Wash">` : ""}
@@ -343,17 +348,20 @@ function layout(slide) {
           </ul>
         </div>
         <div class="pv2-col pv2-col--quote">
-          <div class="pv2-qmark">"</div>
-          <p class="pv2-qtext">${safe(quoteText || "")}</p>
-          <div class="pv2-qauthor">
-            <strong>${safe(quoteAuthor || "")}</strong>
-            <span>${safe(quoteRole || "")}</span>
+          <div class="pv2-quote-card">
+            <div class="pv2-qmark">"</div>
+            <p class="pv2-qtext">${safe(quoteText || "")}</p>
+            <div class="pv2-qauthor">
+              <strong>${safe(quoteAuthor || "")}</strong>
+              <span>${safe(quoteRole || "")}</span>
+            </div>
+            ${slide.forbesLogo ? `<img class="pv2-forbes" src="${safe(slide.forbesLogo)}" alt="Forbes">` : ""}
           </div>
-          ${slide.forbesLogo ? `<img class="pv2-forbes" src="${safe(slide.forbesLogo)}" alt="Forbes">` : ""}
+          ${(slide.pressTexts || []).slice(0, 1).map((t) => `<p class="pv2-col-desc">${safe(t)}</p>`).join("")}
         </div>
         <div class="pv2-col">
           ${slide.pressImage ? `<img class="pv2-press-img" src="${safe(slide.pressImage)}" alt="La Wash en prensa">` : ""}
-          ${(slide.pressTexts || []).map((t) => `<p class="pv2-press-text">${safe(t)}</p>`).join("")}
+          ${(slide.pressTexts || []).slice(1).map((t) => `<p class="pv2-col-desc">${safe(t)}</p>`).join("")}
         </div>
       </div>
     </div>`;

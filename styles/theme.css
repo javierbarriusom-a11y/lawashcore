@@ -586,21 +586,59 @@ main { min-height: 0; display: grid; align-items: center; }
 
 /* ── Press V2 layout ── */
 main:has(.pv2-layout) { align-items: start; }
+
+/* Light theme override for this slide */
+.pv2-light {
+  background: #e4e4de !important;
+  background-image: none !important;
+}
+.pv2-light header .eyebrow,
+.pv2-light header .slide-num { color: var(--wash-navy) !important; }
+
+/* Layout */
 .pv2-layout {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
   min-height: 0;
   width: 100%;
 }
-.pv2-layout .copy { max-width: 100%; flex-shrink: 0; }
-.pv2-layout .subtitle { font-size: 16px; margin-top: 4px; }
+/* Title banner */
+.pv2-banner {
+  background: var(--wash-blue);
+  padding: 18px 0 16px;
+  flex-shrink: 0;
+  margin: 0 -72px; /* bleed to slide edges */
+  padding-left: 72px;
+  padding-right: 72px;
+}
+.pv2-banner .pv2-title-main {
+  font-family: var(--font-display);
+  font-size: 46px;
+  line-height: 1;
+  color: var(--wash-white);
+  text-transform: uppercase;
+  margin: 0;
+}
+.pv2-banner .pv2-title-main em {
+  color: var(--wash-green);
+  font-style: normal;
+}
+.pv2-banner .pv2-subtitle {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1;
+  color: var(--wash-white);
+  text-transform: uppercase;
+  margin: 6px 0 0;
+}
 .pv2-cols {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 28px;
   flex: 1;
   min-height: 0;
+  padding-top: 20px;
 }
 .pv2-col {
   background: none;
@@ -614,9 +652,6 @@ main:has(.pv2-layout) { align-items: start; }
 }
 .pv2-awards {
   width: 100%;
-  flex: 1;
-  min-height: 0;
-  max-height: 260px;
   object-fit: contain;
   border-radius: 0;
   background: transparent;
@@ -635,8 +670,8 @@ main:has(.pv2-layout) { align-items: start; }
   font-size: 15px;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--wash-white);
-  padding-left: 16px;
+  color: var(--wash-navy);
+  padding-left: 18px;
   position: relative;
   line-height: 1.3;
 }
@@ -644,74 +679,86 @@ main:has(.pv2-layout) { align-items: start; }
   content: "•";
   position: absolute;
   left: 0;
-  color: var(--wash-green);
+  color: var(--wash-blue);
 }
-.pv2-col--quote { justify-content: space-between; }
+.pv2-col--quote {
+  justify-content: flex-start;
+}
+/* White card for the quote */
+.pv2-quote-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 22px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  flex: 1;
+}
 .pv2-qmark {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 88px;
+  font-size: 72px;
   line-height: .65;
-  color: var(--wash-green);
-  margin-bottom: 6px;
+  color: #111;
   flex-shrink: 0;
 }
 .pv2-qtext {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.55;
-  font-weight: 600;
-  color: rgba(255,255,255,.92);
+  font-weight: 500;
+  color: #111;
   flex: 1;
 }
 .pv2-qauthor {
-  border-top: 1px solid rgba(255,255,255,.25);
-  padding-top: 12px;
+  border-top: 2px solid #111;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 2px;
   flex-shrink: 0;
 }
 .pv2-qauthor strong {
-  font-size: 15px;
-  font-weight: 800;
-  color: var(--wash-white);
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
 }
 .pv2-qauthor span {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  color: rgba(255,255,255,.6);
+  color: #555;
   text-transform: uppercase;
-  letter-spacing: .4px;
+  letter-spacing: .3px;
 }
 .pv2-forbes {
-  max-height: 36px;
+  max-height: 40px;
   width: auto;
   object-fit: contain;
   background: transparent;
   box-shadow: none;
   border: none;
   border-radius: 0;
-  filter: brightness(0) invert(1);
+  filter: none;
   flex-shrink: 0;
+  align-self: flex-end;
+}
+.pv2-col-desc {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--wash-navy);
+  margin: 0;
 }
 .pv2-press-img {
   width: 100%;
-  flex: 1;
-  min-height: 0;
-  max-height: 240px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
   background: transparent;
   box-shadow: none;
   border: none;
-}
-.pv2-press-text {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 650;
-  line-height: 1.5;
-  color: rgba(255,255,255,.85);
+  flex: 1;
+  min-height: 0;
 }
 
 .image-only {
