@@ -248,7 +248,7 @@ window.DECK_SLIDES = [
       ["ATENCIÓN PARA TU CLIENTE", "Atención completa a TUS CLIENTES gestionada por nuestro equipo"],
       ["ATENCIÓN PARA TI", ""]
     ],
-    foot: "DESCUBRE TODOS LOS SERVICIOS QUE TENEMOS PARA TI",
+    footLink: ["DESCUBRE TODOS LOS SERVICIOS QUE TENEMOS PARA TI", "https://lawash.es/lavanderia-la-wash/"],
     layout: "care"
   },
   {
