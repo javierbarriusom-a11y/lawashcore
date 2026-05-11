@@ -589,12 +589,13 @@ main:has(.pv2-layout) { align-items: start; }
 .pv2-layout {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 36px;
   min-height: 0;
   width: 100%;
 }
 .pv2-layout .copy { max-width: 100%; flex-shrink: 0; }
-.pv2-layout .subtitle { font-size: 16px; margin-top: 4px; }
+.pv2-layout .title { font-size: 64px; }
+.pv2-layout .subtitle { font-size: 14px; margin-top: 4px; }
 .pv2-img-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -628,7 +629,7 @@ main:has(.pv2-layout) { align-items: start; }
 }
 .pv2-card-img {
   width: 100%;
-  max-height: 260px;
+  max-height: 320px;
   object-fit: contain;
   object-position: top;
   background: transparent;
@@ -637,18 +638,17 @@ main:has(.pv2-layout) { align-items: start; }
   border-radius: 0;
   flex-shrink: 0;
 }
-/* Awards images (multiple per card) slightly smaller */
 .pv2-card:has(.pv2-card-img + .pv2-card-img) .pv2-card-img {
-  max-height: 200px;
+  max-height: 220px;
 }
 .pv2-card-body {
   flex-shrink: 0;
 }
 .pv2-card-text {
   margin: 0;
-  font-size: 28px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.45;
   color: rgba(255,255,255,.9);
 }
 .pv2-cols {
@@ -688,11 +688,11 @@ main:has(.pv2-layout) { align-items: start; }
   gap: 10px;
 }
 .pv2-bullets li {
-  font-size: 28px;
+  font-size: 15px;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--wash-white);
-  padding-left: 26px;
+  padding-left: 18px;
   position: relative;
   line-height: 1.3;
 }
