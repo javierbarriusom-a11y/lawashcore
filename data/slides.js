@@ -300,10 +300,9 @@ window.DECK_SLIDES = [
   {
     section: "Cierre",
     eyebrow: "Siguiente paso",
-    title: "¿ESTÁS LISTO PARA DAR EL SIGUIENTE PASO?",
-    subtitle: "Únete a La Wash y descubre una nueva y emocionante oportunidad de inversión en el sector de las lavanderías autoservicio.\n\nEn La Wash® te ayudamos en todo el proceso, desde la ubicación, las instalaciones y obras, pasando por el diseño de lavandería autoservicio a la medida de tus posibilidades. Además de un seguimiento y apoyo continuo una vez abierto el negocio.",
-    background: "assets/source-media/cta-slide-bg.jpg",
-    layout: "cta"
+    image: "assets/source-media/cta-slide-bg.jpg",
+    theme: "pptx-imgbg",
+    layout: "bgonly"
   },
   {
     section: "Cierre",
