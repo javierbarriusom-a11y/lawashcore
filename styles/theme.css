@@ -820,10 +820,12 @@ main:has(.cta-layout) { align-items: stretch; }
   background: #111 !important;
 }
 .bgonly-img {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center center;
   border-radius: 0;
   box-shadow: none;
   border: none;
