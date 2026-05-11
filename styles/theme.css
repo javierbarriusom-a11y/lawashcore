@@ -851,16 +851,16 @@ main:has(.cta-layout) { align-items: stretch; }
   height: 100%;
 }
 .closing-logo {
-  width: clamp(180px, 26%, 320px);
-  opacity: 0.15;
-  filter: brightness(10);
+  width: clamp(240px, 32%, 420px);
+  opacity: 0.35;
+  mix-blend-mode: screen;
   object-fit: contain;
 }
 .closing-address {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  font-size: 15px;
+  gap: 4px;
+  font-size: 30px;
   font-weight: 500;
   color: rgba(255,255,255,.6);
   text-align: center;
