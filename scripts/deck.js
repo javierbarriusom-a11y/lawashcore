@@ -303,6 +303,7 @@ function layout(slide) {
         <ul class="cv2-list">${(card[1] || "").split("\n").filter(Boolean).map((item) => `<li>${lines(item)}</li>`).join("")}</ul>
       </div>`).join("");
     return `<div class="cv2-layout">
+      <div class="cv2-header">${titleBlock(slide, true)}</div>
       <div class="cv2-left">
         <strong>${lines(st[0])}</strong>
         <span>${lines(st[1])}</span>
