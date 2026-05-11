@@ -39,11 +39,6 @@ function footer(slide) {
     : footText;
   return `<div class="slide-foot">
     <div>${footContent}</div>
-    <div class="footer-nav" aria-label="Navegación de diapositivas">
-      <button type="button" data-footer-nav="home">Inicio</button><span>·</span>
-      <button type="button" data-footer-nav="prev">Atrás</button><span>·</span>
-      <button type="button" data-footer-nav="next">Siguiente</button>
-    </div>
   </div>`;
 }
 

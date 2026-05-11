@@ -445,6 +445,7 @@ main { min-height: 0; display: grid; align-items: center; }
 .commerce-layout .media img,
 .support-layout .media img,
 .care-layout .media img { object-fit: cover; height: 58svh; }
+.care-layout--nofg { grid-template-columns: minmax(0, 1fr); }
 .customer-layout .media img,
 .services-layout .media img { max-height: 66svh; }
 /* ── Servicios slide: left gradient, full-width card grid ── */
@@ -462,7 +463,13 @@ main { min-height: 0; display: grid; align-items: center; }
   max-width: 68%;
 }
 .soporte-bg {
-  background: var(--slide-bg) right center / cover no-repeat !important;
+  background:
+    linear-gradient(90deg,
+      rgba(23,31,40,.96) 0%,
+      rgba(23,31,40,.82) 40%,
+      rgba(23,31,40,.25) 65%,
+      transparent 100%),
+    var(--slide-bg) right center / auto 82% no-repeat !important;
 }
 .app-layout .media img { max-height: 68svh; background: none; box-shadow: none; border-radius: 0; }
 .app-layout--nofg { grid-template-columns: minmax(0, 1fr); }
