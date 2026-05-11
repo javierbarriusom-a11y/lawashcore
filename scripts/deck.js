@@ -332,6 +332,9 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "image-only") return imageOnly(slide);
+  if (slide.layout === "bgonly") {
+    return slide.title ? `<div class="bgonly-title">${titleBlock(slide, true)}</div>` : ``;
+  }
   if (slide.layout === "cta") {
     return `<div class="cta-layout">
       <div>${titleBlock(slide)}${slide.qr ? `<img class="qr" src="${safe(slide.qr)}" alt="QR">` : ""}</div>
@@ -339,9 +342,11 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "closing") {
+    const socialsHTML = (slide.socials || []).map(([src, href]) =>
+      `<a href="${safe(href)}" target="_blank" rel="noopener"><img src="${safe(src)}" alt=""></a>`
+    ).join("");
     return `<div class="closing-layout">
-      <img class="closing-main" src="${safe(slide.image)}" alt="La Wash">
-      <div class="socials">${(slide.supportImages || []).map((src) => `<img src="${safe(src)}" alt="">`).join("")}</div>
+      <div class="socials">${socialsHTML}</div>
     </div>`;
   }
   return `<div class="stack">${titleBlock(slide, true)}${renderCards(slide.cards || [])}</div>`;

@@ -267,28 +267,29 @@ window.DECK_SLIDES = [
     eyebrow: "Control",
     title: "NEXA Control 360 de tu negocio",
     image: "assets/source-media/image54.png",
-    layout: "image-only"
+    theme: "pptx-imgbg",
+    layout: "bgonly"
   },
   {
     section: "Prueba",
     eyebrow: "Razones",
-    title: "",
     image: "assets/source-media/image55.png",
-    layout: "image-only"
+    theme: "pptx-imgbg",
+    layout: "bgonly"
   },
   {
     section: "Prueba",
     eyebrow: "Modelos",
-    title: "",
     image: "assets/source-media/image56.png",
-    layout: "image-only"
+    theme: "pptx-imgbg",
+    layout: "bgonly"
   },
   {
     section: "Prueba",
     eyebrow: "Flujo",
-    title: "",
     image: "assets/source-media/image57.png",
-    layout: "image-only"
+    theme: "pptx-imgbg",
+    layout: "bgonly"
   },
   {
     section: "Cierre",
@@ -301,9 +302,13 @@ window.DECK_SLIDES = [
   {
     section: "Cierre",
     eyebrow: "La Wash",
-    title: "",
     image: "assets/source-media/image60.png",
-    supportImages: ["assets/source-media/image61.png", "assets/source-media/image62.png", "assets/source-media/image63.png", "assets/source-media/image64.png"],
+    socials: [
+      ["assets/source-media/image61.png", "https://www.facebook.com/lawash/"],
+      ["assets/source-media/image62.png", "https://www.instagram.com/lawash.es/"],
+      ["assets/source-media/image63.png", "https://www.linkedin.com/company/lawash/"],
+      ["assets/source-media/image64.png", "https://www.youtube.com/c/LaWash"]
+    ],
     layout: "closing"
   }
 ];
