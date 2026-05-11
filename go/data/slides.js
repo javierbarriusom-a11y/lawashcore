@@ -33,7 +33,7 @@ window.DECK_SLIDES = [
     section: "GO",
     eyebrow: "Mercado",
     title: "UN MERCADO QUE CRECE EXPONENCIALMENTE",
-    image: "../assets/source-media/image11.jpeg",
+    image: "../assets/source-media/go-lavanderia-cliente.jpg",
     foreground: false,
     cards: [
       ["Estilo de vida", "Más hogares unipersonales y espacios reducidos"],
