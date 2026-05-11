@@ -301,7 +301,6 @@ window.DECK_SLIDES = [
     section: "Cierre",
     eyebrow: "Siguiente paso",
     title: "¿ESTÁS LISTO PARA DAR EL SIGUIENTE PASO?",
-    image: "assets/source-media/image58.png",
     action: ["Abre una franquicia con nosotros AQUÍ", "https://lawash.es/contacto/"],
     layout: "cta"
   },
