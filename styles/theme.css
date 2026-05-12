@@ -57,8 +57,9 @@ button { font: inherit; }
   white-space: nowrap;
 }
 .section-status strong { font-weight: 900; }
-.nav-pills { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
-.nav-pills button, .controls button {
+.nav-pills,
+.language-switcher { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.nav-pills button, .controls button, .language-switcher button {
   border: 1px solid rgba(0,77,133,.22);
   background: transparent;
   color: var(--wash-ink);
@@ -72,8 +73,25 @@ button { font: inherit; }
   font-weight: 800;
   transition: background .18s ease, color .18s ease, border-color .18s ease;
 }
+.language-switcher {
+  margin-left: auto;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(0,77,133,.08);
+  border: 1px solid rgba(0,77,133,.1);
+}
+.language-switcher button {
+  min-width: 39px;
+  padding: 6px 9px;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(23,31,40,.72);
+  transition: background .18s ease, color .18s ease, border-color .18s ease;
+}
 .nav-pills button.is-active,
 .nav-pills button:hover,
+.language-switcher button.is-active,
+.language-switcher button:hover,
 .controls button:hover {
   background: var(--wash-navy);
   color: var(--wash-white);
@@ -944,6 +962,8 @@ main:has(.cta-layout) { align-items: stretch; }
   :root { --slide-pad: 76px 18px 86px; }
   .topbar { inset: 8px 8px auto; min-height: 48px; padding: 8px 10px; }
   .brand { font-size: 23px; }
+  .language-switcher { gap: 4px; padding: 2px; }
+  .language-switcher button { min-width: 34px; min-height: 30px; padding: 5px 7px; font-size: 11px; }
   .section-status { display: none; }
   .slide-grid { gap: 12px; }
   .slide-head { padding-bottom: 8px; }

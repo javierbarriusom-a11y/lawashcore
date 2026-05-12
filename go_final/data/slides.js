@@ -310,3 +310,488 @@ window.DECK_SLIDES = [
     layout: "closing"
   }
 ];
+
+window.DECK_I18N = {
+  es: {
+    label: "ES",
+    htmlLang: "es",
+    title: "La Wash GO | Módulo lavandería autoservicio compacto",
+    description: "Presentación La Wash GO — módulo de lavandería autoservicio compacto. Transforma tu espacio en ingresos.",
+    sections: {
+      "Inicio": "Inicio",
+      "GO": "GO",
+      "Nexa": "Nexa",
+      "Inversión": "Inversión",
+      "Cierre": "Cierre"
+    },
+    ui: {
+      sectionLabel: "Sección",
+      chaptersLabel: "Capítulos",
+      navigationLabel: "Navegación",
+      languageLabel: "Idioma",
+      nav: ["Inicio", "GO", "Nexa", "Inversión", "Cierre"],
+      home: "Inicio",
+      prev: "Atrás",
+      next: "Siguiente",
+      footerDefault: "La Wash GO · Módulo compacto de lavandería autoservicio",
+      amortizeHeaders: ["Inversión La Wash", "Espacio / mes", "Años amortización", "Reparto durante período"]
+    },
+    slides: []
+  },
+  en: {
+    label: "EN",
+    htmlLang: "en",
+    title: "La Wash GO | Compact self-service laundry module",
+    description: "La Wash GO presentation — a compact modular self-service laundry. Turn your space into revenue.",
+    sections: {
+      "Inicio": "Home",
+      "GO": "GO",
+      "Nexa": "Nexa",
+      "Inversión": "Investment",
+      "Cierre": "Close"
+    },
+    ui: {
+      sectionLabel: "Section",
+      chaptersLabel: "Chapters",
+      navigationLabel: "Navigation",
+      languageLabel: "Language",
+      nav: ["Home", "GO", "Nexa", "Investment", "Close"],
+      home: "Home",
+      prev: "Back",
+      next: "Next",
+      footerDefault: "La Wash GO · Compact self-service laundry module",
+      amortizeHeaders: ["La Wash investment", "Space / month", "Payback years", "Split during period"]
+    },
+    slides: [
+      {
+        eyebrow: "Product · La Wash GO",
+        title: "TURN YOUR SPACE INTO REVENUE",
+        subtitle: "The market's most profitable self-service laundry, now in a compact modular format. No initial investment, no staff, no complications.",
+        action: ["Discover why we are different"]
+      },
+      {
+        eyebrow: "Leadership",
+        title: "Leaders in self-service. Pioneers in results",
+        subtitle: "More than 15 years developing Europe's most efficient and sustainable model",
+        stats: [
+          ["No. 1", "in Iberia\nThe absolute benchmark brand in the sector"],
+          ["+450", "stores\nA consolidated network in constant international expansion"],
+          ["+3.5M", "customers\nTrust our quality and user experience"],
+          ["+30%", "franchisees\nOwn more than one location with us"],
+          ["5", "countries\nWith our proven model"]
+        ],
+        footLink: ["Want to know more about us?"],
+        action: ["Want to know more about us?"]
+      },
+      {
+        eyebrow: "Market",
+        title: "A MARKET GROWING EXPONENTIALLY",
+        cards: [
+          ["Lifestyle", "More single-person households and smaller living spaces"],
+          ["Savings and convenience", "Washing away from home is 30% cheaper"],
+          ["Digitalization", "Mass adoption of self-managed services and digital payments"],
+          ["Sustainability", "Savings and sustainability through water- and energy-efficient technologies."]
+        ]
+      },
+      {
+        eyebrow: "Location",
+        title: "BOOST YOUR BUSINESS",
+        bullets: [
+          "Create positive synergies with existing businesses.",
+          "Exclusive design adaptable to different environments.",
+          "Open or closed configuration depending on the location.",
+          "Compact format designed for agile deployments."
+        ],
+        cards: [
+          ["SERVICE STATIONS", "High-traffic service areas with captive demand."],
+          ["SUPERMARKETS", "Complements the customer's weekly shopping trip."],
+          ["SHOPPING CENTERS", "A distinctive convenience service."],
+          ["PUBLIC CAR PARKS", "Additional revenue from underused spaces."],
+          ["CAMPSITES", "An essential service in peak season."],
+          ["TRANSIT AREAS", "Car washes and high-flow transit areas."]
+        ]
+      },
+      {
+        eyebrow: "GO model",
+        title: "TWO WAYS TO GENERATE REVENUE",
+        subtitle: "From first contact to the first machine running, we take care of absolutely everything",
+        cards: [
+          ["Complete transport and installation"],
+          ["Technical service and 365-day call center"],
+          ["Supply and replenishment of consumables"],
+          ["Revenue collection and control"],
+          ["Marketing and customer acquisition"]
+        ]
+      },
+      {
+        eyebrow: "The module",
+        title: "LA WASH GO!\nTHE LAUNDRY THAT FITS ANYWHERE",
+        subtitle: "The La Wash GO module is a complete self-service laundry, ready to install outdoors or indoors in any business. Compact, robust and 100% autonomous.",
+        cards: [
+          ["Dimensions", "3,500 × 2,040 × 2,600 mm"],
+          ["Equipment", "2 washers + 1 or 2 dryers, 17 kg"],
+          ["Heating", "Standard electric / Optional gas"],
+          ["Connections", "Water, drainage and electricity (3×380 V)"],
+          ["Structure", "Galvanized steel + polyurethane paint"],
+          ["Operation", "365 days · 24 hours · no staff required"]
+        ]
+      },
+      {
+        eyebrow: "TECHNOLOGY",
+        title: "NEXA: TECHNOLOGY & INTELLIGENCE AT YOUR SERVICE",
+        cards: [
+          ["NEXA PoS", "Point-of-sale system with intelligent payment capabilities, integrated promotions and upselling, and machine management."],
+          ["NEXA Management", "Remotely manage all store operations plus accounting and financial administration."],
+          ["NEXA Services", "Purchase products and services to operate the laundry with preferred terms, traceability and full automation.\n*Customer care & success"],
+          ["NEXA Customer", "Create an ongoing relationship with consumers to increase usage frequency and average ticket."]
+        ]
+      },
+      {
+        eyebrow: "TECHNOLOGY",
+        title: "NEXA POS:\nA POS THAT COLLECTS PAYMENT, BUT ALSO SELLS",
+        subtitle: "OUR UPSELLING SYSTEM IN ACTION",
+        cards: [
+          ["Intuitive kiosk or terminal interface (advanced UX)"],
+          ["User app to manage available machines, pay and receive rewards"],
+          ["Integrated promotions and upselling"],
+          ["Incident and maintenance management"],
+          ["Security and reliability"],
+          ["SMART PAYMENT SYSTEM", "QR CODES\nPROMO CODES\nBIZUM"]
+        ]
+      },
+      {
+        eyebrow: "TECHNOLOGY",
+        title: "NEXA POS: automatic upselling.\nYOUR CUSTOMERS WILL WANT TO BUY MORE",
+        subtitle: "INTUITIVE NAVIGATION FLOW THAT INVITES USERS TO ADD EXTRA SERVICES",
+        cards: [
+          ["AI algorithms to increase sales"],
+          ["Promotional codes integrated in the payment terminal"],
+          ["Dynamic offers based on user behavior"],
+          ["Upselling of additional products and services"],
+          ["Consumer loyalty and gamification program"]
+        ],
+        stats: [["+15%", "Average ticket increase versus the sector standard."], ["+20%", "Global revenue growth thanks to usage optimization."]],
+        action: ["WANT TO SEE NEXA IN MOTION?"]
+      },
+      {
+        eyebrow: "TECHNOLOGY",
+        title: "NEXA Management.\nYOUR operations, finances and customers across all your locations, from anywhere",
+        subtitle: "Want to know more?",
+        cards: [
+          ["REMOTE MANAGEMENT", "Remote incident resolution in real time, in one click\nStore and machinery monitoring\nAll operations from app or web dashboard."],
+          ["Decide with data", "Revenue and treasury\nIncome and results by machine\nCustomer control and records\nCompliant with Verifactu. Zero tax friction (*)."],
+          ["Control your business at all times", "Advanced analytics and personalized dashboard reports\nYour location's results at a glance\nCompare your locations' performance with your area's results (*)"]
+        ],
+        foot: "(*) Optional"
+      },
+      {
+        eyebrow: "TECHNOLOGY",
+        title: "NEXA COMMERCE:\nBUY LA WASH PRODUCTS AND SERVICES\nIN 1 CLICK",
+        cards: [
+          ["La Wash products and services available:", "Energy\nInsurance\nMarketing\nConsumables\nDaily cleaning service\nReview management\nRemote activations\nAmazon / InPost locker solution\nPremium full management"],
+          ["ORDER MANAGEMENT", "Smart catalog\nDynamic pricing\nPromotions or bonuses\nPersonalized prices\nOrder integrated with Nexa Management & PoS\nReal-time order status tracking\nAutomatic invoice generation\nReconciliation with the Nexa system"],
+          ["PERSONALIZED PRICES", "Dynamic pricing\nPromotions or bonuses"]
+        ]
+      },
+      {
+        eyebrow: "Win-Win",
+        title: "GENERATE REVENUE with no initial investment",
+        subtitle: "The investor provides the space · La Wash provides the technology and complete module",
+        winwin: {
+          investor: {
+            label: "THE INVESTOR PROVIDES",
+            items: [
+              "Physical space for the GO! module (outside or inside the business)",
+              "Utilities: water, electricity and drainage at the installation point",
+              "Urban planning permits and licenses applicable to the location",
+              "Assignment contract with an agreed minimum commitment",
+              "Reference value: €800–€1,400/month (market commercial rent)"
+            ]
+          },
+          lawash: {
+            label: "LA WASH PROVIDES",
+            items: [
+              "Complete GO! module: structure, NEXA machinery and technology (€30,000–€60,000)",
+              "Turnkey installation: transport, assembly and technical connections",
+              "365/24h operation: maintenance, collection, call center and consumables",
+              "Digital marketing, La Wash app and commercial user management"
+            ]
+          }
+        },
+        stats: [
+          ["€0", "Initial outlay\nfor the investor"],
+          ["3–5 years", "Payback period\nfor La Wash investment"],
+          ["18%", "Average annual ROI\nfor the sector in Spain"],
+          ["365/24h", "Autonomous operation\nwith no staff"]
+        ]
+      },
+      {
+        eyebrow: "Payback",
+        title: "YOUR SPACE PAYS BACK THE INVESTMENT",
+        subtitle: "Progressive compensation model: the value of the assigned space is calculated monthly, reducing La Wash's debt until full amortization.",
+        amortize: {
+          scenarios: [
+            { inversion: "€30,000", espacio: "€800/month", anos: "~3.1 years", reparto: "70% La Wash · 30% Investor" },
+            { inversion: "€30,000", espacio: "€1,200/month", anos: "~2.1 years", reparto: "70% La Wash · 30% Investor" },
+            { inversion: "€45,000", espacio: "€1,000/month", anos: "~3.8 years", reparto: "75% La Wash · 25% Investor" },
+            { inversion: "€60,000", espacio: "€1,200/month", anos: "~4.2 years", reparto: "80% La Wash · 20% Investor" },
+            { inversion: "€60,000", espacio: "€1,400/month", anos: "~3.6 years", reparto: "75% La Wash · 25% Investor" }
+          ],
+          highlight: "★ After full amortization: the investor receives 50% of net revenue in perpetuity.",
+          steps: [
+            { label: "YEAR 0", title: "Signature & installation", text: "The investor assigns the space. La Wash assumes 100% of the GO! module investment and installs it in less than 1 week." },
+            { label: "YEARS 1–N", title: "Payback period", text: "The value of the space (equivalent to market rent) is deducted monthly from La Wash's investment balance." },
+            { label: "YEAR N+1", title: "Settlement & 50% split", text: "Amortized balance = 0. The investor automatically receives 50% of net revenue with no further obligations." }
+          ]
+        }
+      },
+      {
+        eyebrow: "TECHNOLOGY",
+        title: "NEXA CUSTOMER:\nYOU PROVIDE THE BUSINESS. WE MOBILIZE THE CUSTOMERS",
+        cards: [
+          ["APP LA WASH", "More than a payment method. An engagement tool to know, segment and reward your consumers."],
+          ["COMMERCIAL MANAGEMENT AND LOYALTY", "Discounts, special promotions and rewards available to your customers. Unique benefits that lift their laundry experience to another level."],
+          ["GEOMARKETING SERVICES. CAMPAIGNS, SOCIAL MEDIA.", "A unique and innovative approach: a marketing services department available to the franchisee, with segmented, personalized and geolocated actions."]
+        ],
+        action: ["JOIN THE LA WASH CLUB"]
+      },
+      { eyebrow: "Results" },
+      { eyebrow: "Model" },
+      {
+        eyebrow: "Next step",
+        title: "OPEN A FRANCHISE WITH US",
+        subtitle: "Join La Wash GO and turn your space into a source of passive income. No initial investment, no staff, no complications.\n\nAt La Wash® we take care of absolutely everything, from module installation to full operational management.",
+        action: ["Open a franchise with us here"]
+      },
+      { eyebrow: "La Wash" }
+    ]
+  },
+  fr: {
+    label: "FR",
+    htmlLang: "fr",
+    title: "La Wash GO | Module de laverie libre-service compact",
+    description: "Présentation La Wash GO — module de laverie libre-service compact. Transformez votre espace en revenus.",
+    sections: {
+      "Inicio": "Accueil",
+      "GO": "GO",
+      "Nexa": "Nexa",
+      "Inversión": "Investissement",
+      "Cierre": "Clôture"
+    },
+    ui: {
+      sectionLabel: "Section",
+      chaptersLabel: "Chapitres",
+      navigationLabel: "Navigation",
+      languageLabel: "Langue",
+      nav: ["Accueil", "GO", "Nexa", "Investissement", "Clôture"],
+      home: "Accueil",
+      prev: "Précédent",
+      next: "Suivant",
+      footerDefault: "La Wash GO · Module compact de laverie libre-service",
+      amortizeHeaders: ["Investissement La Wash", "Espace / mois", "Années d'amortissement", "Répartition pendant la période"]
+    },
+    slides: [
+      {
+        eyebrow: "Produit · La Wash GO",
+        title: "TRANSFORMEZ VOTRE ESPACE EN REVENUS",
+        subtitle: "La laverie libre-service la plus rentable du marché, désormais en format modulaire compact. Sans investissement initial, sans personnel, sans complications.",
+        action: ["Découvrez pourquoi nous sommes différents"]
+      },
+      {
+        eyebrow: "Leadership",
+        title: "Leaders du libre-service. Pionniers des résultats",
+        subtitle: "Plus de 15 ans à développer le modèle le plus efficace et durable d'Europe",
+        stats: [
+          ["Nº1", "en Ibérie\nLa marque de référence absolue du secteur"],
+          ["+450", "points de vente\nUn réseau consolidé en expansion internationale constante"],
+          ["+3,5 M", "de clients\nFont confiance à notre qualité et à notre expérience d'utilisation"],
+          ["+30%", "franchisés\nPossèdent plus d'un local avec nous"],
+          ["5", "pays\nAvec notre modèle éprouvé"]
+        ],
+        footLink: ["Vous voulez en savoir plus sur nous ?"],
+        action: ["Vous voulez en savoir plus sur nous ?"]
+      },
+      {
+        eyebrow: "Marché",
+        title: "UN MARCHÉ EN CROISSANCE EXPONENTIELLE",
+        cards: [
+          ["Style de vie", "Davantage de foyers d'une seule personne et de petits espaces"],
+          ["Économies et confort", "Laver hors de chez soi coûte 30 % moins cher"],
+          ["Digitalisation", "Adoption massive de services autogérés et de paiements digitaux"],
+          ["Durabilité", "Économies et durabilité grâce à des technologies efficaces en eau et en énergie."]
+        ]
+      },
+      {
+        eyebrow: "Emplacement",
+        title: "DÉVELOPPEZ VOTRE ACTIVITÉ",
+        bullets: [
+          "Génère des synergies positives avec les activités existantes.",
+          "Design exclusif adaptable à différents environnements.",
+          "Configuration ouverte ou fermée selon l'emplacement.",
+          "Format compact pensé pour des implantations agiles."
+        ],
+        cards: [
+          ["STATIONS-SERVICE", "Aires de service à fort trafic captif."],
+          ["SUPERMARCHÉS", "Complète les courses hebdomadaires du client."],
+          ["CENTRES COMMERCIAUX", "Un service de commodité différenciant."],
+          ["PARKINGS PUBLICS", "Revenus additionnels dans des espaces sous-utilisés."],
+          ["CAMPINGS", "Un service indispensable en haute saison."],
+          ["ZONES DE PASSAGE", "Centres de lavage auto et zones de fort passage."]
+        ]
+      },
+      {
+        eyebrow: "Modèle GO",
+        title: "DEUX FAÇONS DE GÉNÉRER DES REVENUS",
+        subtitle: "Du premier contact à la première machine en fonctionnement, nous nous occupons absolument de tout",
+        cards: [
+          ["Transport et installation complète"],
+          ["Service technique et call center 365 jours"],
+          ["Fourniture et réapprovisionnement des consommables"],
+          ["Encaissement et contrôle des revenus"],
+          ["Marketing et acquisition de clients"]
+        ]
+      },
+      {
+        eyebrow: "Le module",
+        title: "LA WASH GO!\nLA LAVERIE QUI TIENT DANS N'IMPORTE QUEL ESPACE",
+        subtitle: "Le module La Wash GO est une laverie libre-service complète, prête à être installée en extérieur ou en intérieur dans tout type d'activité. Compacte, robuste et 100 % autonome.",
+        cards: [
+          ["Dimensions", "3 500 × 2 040 × 2 600 mm"],
+          ["Équipement", "2 lave-linge + 1 ou 2 sèche-linge de 17 kg"],
+          ["Chauffage", "Électrique standard / Gaz en option"],
+          ["Raccordements", "Eau, évacuation et électricité (3×380 V)"],
+          ["Structure", "Acier galvanisé + peinture polyuréthane"],
+          ["Exploitation", "365 jours · 24 heures · sans personnel"]
+        ]
+      },
+      {
+        eyebrow: "TECHNOLOGIE",
+        title: "NEXA : TECHNOLOGIE & INTELLIGENCE À VOTRE SERVICE",
+        cards: [
+          ["NEXA PoS", "Système de point de vente avec capacités intelligentes de paiement, promotions et upselling intégrés, et gestion des machines."],
+          ["NEXA Gestion", "Gérer à distance l'ensemble des opérations du magasin ainsi que son administration comptable et financière."],
+          ["NEXA Services", "Acheter les produits et services nécessaires à l'exploitation de la laverie avec conditions préférentielles, traçabilité et automatisation totale.\n*Customer care & success"],
+          ["NEXA Customer", "Créer une relation continue avec le consommateur pour augmenter sa fréquence d'utilisation et son ticket moyen."]
+        ]
+      },
+      {
+        eyebrow: "TECHNOLOGIE",
+        title: "NEXA POS :\nUN POS QUI ENCAISSE, MAIS QUI VEND AUSSI",
+        subtitle: "NOTRE SYSTÈME D'UPSELLING EN ACTION",
+        cards: [
+          ["Interface intuitive sur kiosque ou terminal (UX avancée)"],
+          ["Application utilisateur pour gérer les machines disponibles, payer et recevoir des récompenses"],
+          ["Promotions et upselling intégrés"],
+          ["Gestion des incidents et de la maintenance"],
+          ["Sécurité et fiabilité"],
+          ["SYSTÈME DE PAIEMENT INTELLIGENT", "CODES QR\nCODES PROMOTIONNELS\nBIZUM"]
+        ]
+      },
+      {
+        eyebrow: "TECHNOLOGIE",
+        title: "NEXA POS : upselling automatique.\nVOS CLIENTS VOUDRONT ACHETER PLUS",
+        subtitle: "UN PARCOURS DE NAVIGATION INTUITIF QUI INVITE L'UTILISATEUR À AJOUTER DES SERVICES SUPPLÉMENTAIRES",
+        cards: [
+          ["Algorithmes d'IA pour augmenter les ventes"],
+          ["Codes promotionnels intégrés à la centrale de paiement"],
+          ["Offres dynamiques basées sur le comportement utilisateur"],
+          ["Upselling de produits et services additionnels"],
+          ["Programme de fidélisation et gamification du consommateur"]
+        ],
+        stats: [["+15%", "Hausse du ticket moyen par rapport au standard du secteur."], ["+20%", "Croissance du chiffre d'affaires global grâce à l'optimisation de l'usage."]],
+        action: ["VOUS VOULEZ VOIR NEXA EN ACTION ?"]
+      },
+      {
+        eyebrow: "TECHNOLOGIE",
+        title: "NEXA Gestion.\nVOS opérations, finances et clients de tous vos locaux, où que vous soyez",
+        subtitle: "Vous voulez en savoir plus ?",
+        cards: [
+          ["GESTION À DISTANCE", "Résolution à distance des incidents en temps réel, en un seul clic\nSurveillance du local et des machines\nToute l'exploitation depuis l'application ou le tableau de bord web."],
+          ["Décidez avec les données", "Facturation et trésorerie\nRevenus et résultats par machine\nContrôle et registre de vos clients\nConforme à la norme Verifactu. Zéro friction fiscale (*)."],
+          ["Gardez le contrôle de votre activité", "Analytique avancée et rapports personnalisés via dashboard\nRésultats de votre local en un coup d'œil\nComparez les résultats de vos locaux avec ceux de votre zone (*)"]
+        ],
+        foot: "(*) Optionnel"
+      },
+      {
+        eyebrow: "TECHNOLOGIE",
+        title: "NEXA COMMERCE :\nACHAT DE PRODUITS ET SERVICES LA WASH\nEN 1 CLIC",
+        cards: [
+          ["Produits et services La Wash disponibles :", "Énergie\nAssurances\nMarketing\nConsommables\nService de nettoyage quotidien\nGestion des avis\nActivations à distance\nSolution lockers Amazon / InPost\nGestion intégrale premium"],
+          ["GESTION DES COMMANDES", "Catalogue intelligent\nTarifs dynamiques\nPromotions ou bonus\nPrix personnalisés\nCommande intégrée avec Nexa Gestion & PoS\nSuivi de l'état de la commande en temps réel\nGénération automatique de factures\nRapprochement avec le système Nexa"],
+          ["PRIX PERSONNALISÉS", "Tarifs dynamiques\nPromotions ou bonus"]
+        ]
+      },
+      {
+        eyebrow: "Win-Win",
+        title: "GÉNÉREZ DES REVENUS sans investissement initial",
+        subtitle: "L'investisseur apporte l'espace · La Wash apporte la technologie et le module complet",
+        winwin: {
+          investor: {
+            label: "L'INVESTISSEUR APPORTE",
+            items: [
+              "Espace physique pour le module GO! (extérieur ou intérieur de l'activité)",
+              "Raccordements : eau, électricité et évacuation au point d'installation",
+              "Permis et licences urbanistiques applicables à l'emplacement",
+              "Contrat de cession avec durée minimale convenue",
+              "Valeur de référence : 800–1 400 €/mois (loyer commercial de marché)"
+            ]
+          },
+          lawash: {
+            label: "LA WASH APPORTE",
+            items: [
+              "Module GO! complet : structure, machines NEXA et technologie (30 000–60 000 €)",
+              "Installation clé en main : transport, montage et raccordements techniques",
+              "Exploitation 365/24h : maintenance, encaissement, call center et consommables",
+              "Marketing digital, app La Wash et gestion commerciale des utilisateurs"
+            ]
+          }
+        },
+        stats: [
+          ["0 €", "Décaissement initial\nde l'investisseur"],
+          ["3–5 ans", "Période de retour\nde l'investissement La Wash"],
+          ["18%", "ROI annuel moyen\ndu secteur en Espagne"],
+          ["365/24h", "Exploitation autonome\nsans personnel"]
+        ]
+      },
+      {
+        eyebrow: "Amortissement",
+        title: "VOTRE ESPACE AMORTIT L'INVESTISSEMENT",
+        subtitle: "Modèle de compensation progressive : la valeur de l'espace cédé est comptabilisée chaque mois, réduisant la dette de La Wash jusqu'à son amortissement complet.",
+        amortize: {
+          scenarios: [
+            { inversion: "30 000 €", espacio: "800 €/mois", anos: "~3,1 ans", reparto: "70 % La Wash · 30 % Investisseur" },
+            { inversion: "30 000 €", espacio: "1 200 €/mois", anos: "~2,1 ans", reparto: "70 % La Wash · 30 % Investisseur" },
+            { inversion: "45 000 €", espacio: "1 000 €/mois", anos: "~3,8 ans", reparto: "75 % La Wash · 25 % Investisseur" },
+            { inversion: "60 000 €", espacio: "1 200 €/mois", anos: "~4,2 ans", reparto: "80 % La Wash · 20 % Investisseur" },
+            { inversion: "60 000 €", espacio: "1 400 €/mois", anos: "~3,6 ans", reparto: "75 % La Wash · 25 % Investisseur" }
+          ],
+          highlight: "★ Après amortissement complet : l'investisseur reçoit 50 % des revenus nets à perpétuité.",
+          steps: [
+            { label: "ANNÉE 0", title: "Signature & installation", text: "L'investisseur cède l'espace. La Wash assume 100 % de l'investissement du module GO! et l'installe en moins d'une semaine." },
+            { label: "ANNÉES 1–N", title: "Période d'amortissement", text: "La valeur de l'espace (équivalente au loyer de marché) est déduite chaque mois du solde d'investissement de La Wash." },
+            { label: "ANNÉE N+1", title: "Liquidation & partage à 50 %", text: "Solde amorti = 0. L'investisseur reçoit automatiquement 50 % des revenus nets sans autre obligation." }
+          ]
+        }
+      },
+      {
+        eyebrow: "TECHNOLOGIE",
+        title: "NEXA CUSTOMER :\nVOUS APPORTEZ L'ACTIVITÉ. NOUS MOBILISONS LES CLIENTS",
+        cards: [
+          ["APP LA WASH", "Plus qu'un moyen de paiement. Un outil d'engagement pour connaître, segmenter et récompenser vos consommateurs."],
+          ["GESTION COMMERCIALE ET FIDÉLISATION", "Réductions, promotions spéciales et récompenses à disposition de vos clients. Des avantages uniques qui élèvent leur expérience de laverie à un autre niveau."],
+          ["SERVICES DE GÉOMARKETING. CAMPAGNES, SOCIAL MEDIA.", "Une approche unique et innovante : un département de services marketing à disposition du franchisé, avec des actions segmentées, personnalisées et géolocalisées."]
+        ],
+        action: ["REJOIGNEZ LE CLUB LA WASH"]
+      },
+      { eyebrow: "Résultats" },
+      { eyebrow: "Modèle" },
+      {
+        eyebrow: "Prochaine étape",
+        title: "OUVREZ UNE FRANCHISE AVEC NOUS",
+        subtitle: "Rejoignez La Wash GO et transformez votre espace en source de revenus passifs. Sans investissement initial, sans personnel, sans complications.\n\nChez La Wash®, nous nous occupons absolument de tout, de l'installation du module à la gestion opérationnelle complète.",
+        action: ["Ouvrir une franchise avec nous ici"]
+      },
+      { eyebrow: "La Wash" }
+    ]
+  }
+};

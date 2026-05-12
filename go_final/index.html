@@ -14,7 +14,7 @@
 <body>
 <header class="topbar">
   <div class="brand"><span>LA WASH</span> GO</div>
-  <div class="section-status" aria-live="polite">Sección <strong id="sectionName">Inicio</strong></div>
+  <div class="section-status" aria-live="polite"><span id="sectionLabel">Sección</span> <strong id="sectionName">Inicio</strong></div>
   <nav class="nav-pills" aria-label="Capítulos">
     <button data-jump="0">Inicio</button>
     <button data-jump="2">GO</button>
@@ -22,6 +22,11 @@
     <button data-jump="11">Inversión</button>
     <button data-jump="16">Cierre</button>
   </nav>
+  <div class="language-switcher" aria-label="Idioma">
+    <button type="button" data-lang="es">ES</button>
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="fr">FR</button>
+  </div>
 </header>
 <deck-stage id="deck" aria-live="polite"></deck-stage>
 <div class="controls" aria-label="Navegación">

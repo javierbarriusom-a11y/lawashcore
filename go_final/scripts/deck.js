@@ -6,13 +6,94 @@
 //   · default footer text updated for GO product
 //   · adds go-winwin and go-amortize layout renderers
 
-const slides = window.DECK_SLIDES || [];
+const baseSlides = window.DECK_SLIDES || [];
+const i18n = window.DECK_I18N || {};
+const supportedLangs = Object.keys(i18n);
+const defaultLang = supportedLangs.includes("es") ? "es" : supportedLangs[0];
+const requestedLang = new URLSearchParams(window.location.search).get("lang");
+let currentLang = supportedLangs.includes(requestedLang)
+  ? requestedLang
+  : supportedLangs.includes(localStorage.getItem("lawash-go-lang"))
+    ? localStorage.getItem("lawash-go-lang")
+    : defaultLang;
+let slides = localizeSlides(currentLang);
 
 const deck = document.getElementById("deck");
 const counter = document.getElementById("counter");
 const progress = document.getElementById("progress");
+const sectionLabel = document.getElementById("sectionLabel");
 const sectionName = document.getElementById("sectionName");
 let current = Math.max(0, Math.min(slides.length - 1, Number(location.hash.replace("#slide-", "")) - 1 || 0));
+
+function mergePairs(base = [], translated = []) {
+  return base.map((item, index) => Array.isArray(item)
+    ? [...item.map((value, itemIndex) => translated[index]?.[itemIndex] ?? value)]
+    : translated[index] ?? item
+  );
+}
+
+function localizeSlide(slide, patch = {}) {
+  return {
+    ...slide,
+    ...patch,
+    action: patch.action ? [patch.action[0], slide.action?.[1] || patch.action[1]] : slide.action,
+    footLink: patch.footLink ? [patch.footLink[0], slide.footLink?.[1] || patch.footLink[1]] : slide.footLink,
+    stats: patch.stats ? mergePairs(slide.stats, patch.stats) : slide.stats,
+    cards: patch.cards ? mergePairs(slide.cards, patch.cards) : slide.cards,
+    winwin: patch.winwin ? {
+      investor: {
+        ...(slide.winwin?.investor || {}),
+        ...(patch.winwin.investor || {})
+      },
+      lawash: {
+        ...(slide.winwin?.lawash || {}),
+        ...(patch.winwin.lawash || {})
+      }
+    } : slide.winwin,
+    amortize: patch.amortize ? {
+      ...(slide.amortize || {}),
+      ...patch.amortize,
+      scenarios: patch.amortize.scenarios || slide.amortize?.scenarios,
+      steps: patch.amortize.steps || slide.amortize?.steps
+    } : slide.amortize
+  };
+}
+
+function localizeSlides(lang) {
+  const patches = i18n[lang]?.slides || [];
+  return baseSlides.map((slide, index) => localizeSlide(slide, patches[index]));
+}
+
+function ui(key, fallback = "") {
+  return i18n[currentLang]?.ui?.[key] ?? i18n[defaultLang]?.ui?.[key] ?? fallback;
+}
+
+function sectionNameFor(section) {
+  const sections = i18n[currentLang]?.sections || {};
+  return sections[section] || section;
+}
+
+function applyDocumentLanguage() {
+  const config = i18n[currentLang] || {};
+  document.documentElement.lang = config.htmlLang || currentLang;
+  document.title = config.title || document.title;
+  const description = document.querySelector('meta[name="description"]');
+  if (description && config.description) description.setAttribute("content", config.description);
+  if (sectionLabel) sectionLabel.textContent = ui("sectionLabel", "Sección");
+  document.querySelector(".nav-pills")?.setAttribute("aria-label", ui("chaptersLabel", "Capítulos"));
+  document.querySelector(".controls")?.setAttribute("aria-label", ui("navigationLabel", "Navegación"));
+  document.querySelector(".language-switcher")?.setAttribute("aria-label", ui("languageLabel", "Idioma"));
+  document.querySelectorAll("[data-jump]").forEach((button, index) => {
+    const label = ui("nav", [])[index];
+    if (label) button.textContent = label;
+  });
+  document.getElementById("home").textContent = ui("home", "Inicio");
+  document.getElementById("prev").textContent = ui("prev", "Atrás");
+  document.getElementById("next").textContent = ui("next", "Siguiente");
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.lang === currentLang);
+  });
+}
 
 function safe(text) {
   return String(text || "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[c]));
@@ -35,13 +116,13 @@ function header(slide, i) {
   return `
     <div class="slide-head">
       <div class="mark"><img src="../assets/source-media/image4.png" alt="La Wash"></div>
-      <div class="head-meta">${safe(slide.section || "GO")}</div>
+      <div class="head-meta">${safe(sectionNameFor(slide.section || "GO"))}</div>
       <div class="head-count">${String(i + 1).padStart(2, "0")} / ${slides.length}</div>
     </div>`;
 }
 
 function footer(slide) {
-  const footText = slide.foot === false ? "" : (slide.foot ? lines(slide.foot) : "La Wash GO · Módulo compacto de lavandería autoservicio");
+  const footText = slide.foot === false ? "" : (slide.foot ? lines(slide.foot) : ui("footerDefault", "La Wash GO · Módulo compacto de lavandería autoservicio"));
   const footContent = slide.footLink
     ? `<a class="hero-action" href="${safe(slide.footLink[1])}" target="_blank" rel="noopener">${lines(slide.footLink[0])}</a>`
     : footText;
@@ -137,10 +218,10 @@ function renderGoAmortize(slide) {
   const steps = am.steps || [];
   const headHTML = `
     <div class="gam-row gam-head">
-      <span>Inversión La Wash</span>
-      <span>Espacio / mes</span>
-      <span>Años amortización</span>
-      <span>Reparto durante período</span>
+      <span>${safe(ui("amortizeHeaders", [])[0] || "Inversión La Wash")}</span>
+      <span>${safe(ui("amortizeHeaders", [])[1] || "Espacio / mes")}</span>
+      <span>${safe(ui("amortizeHeaders", [])[2] || "Años amortización")}</span>
+      <span>${safe(ui("amortizeHeaders", [])[3] || "Reparto durante período")}</span>
     </div>`;
   const rowsHTML = scenarios.map((s) => `
     <div class="gam-row">
@@ -474,11 +555,12 @@ function update(next) {
   progress.style.width = `${((current + 1) / slides.length) * 100}%`;
   const active = getActiveSection(current);
   document.querySelectorAll("[data-jump]").forEach((button) => button.classList.toggle("is-active", button === active?.button));
-  if (sectionName) sectionName.textContent = slides[current]?.section || active?.button?.textContent || "GO";
+  if (sectionName) sectionName.textContent = sectionNameFor(slides[current]?.section) || active?.button?.textContent || "GO";
   history.replaceState(null, "", `#slide-${current + 1}`);
 }
 
 render();
+applyDocumentLanguage();
 update(current);
 
 document.getElementById("next").addEventListener("click", () => update(current + 1));
@@ -486,6 +568,17 @@ document.getElementById("prev").addEventListener("click", () => update(current -
 document.getElementById("home").addEventListener("click", () => update(0));
 document.querySelectorAll("[data-jump]").forEach((button) => {
   button.addEventListener("click", () => update(Number(button.dataset.jump)));
+});
+document.querySelectorAll("[data-lang]").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!supportedLangs.includes(button.dataset.lang) || button.dataset.lang === currentLang) return;
+    currentLang = button.dataset.lang;
+    localStorage.setItem("lawash-go-lang", currentLang);
+    slides = localizeSlides(currentLang);
+    render();
+    applyDocumentLanguage();
+    update(current);
+  });
 });
 deck.addEventListener("click", (event) => {
   const button = event.target.closest("[data-footer-nav]");
