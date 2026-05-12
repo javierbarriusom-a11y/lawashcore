@@ -74,7 +74,7 @@ window.DECK_SLIDES = [
     eyebrow: "Modelo GO",
     title: "DOS FORMAS DE GENERAR INGRESOS",
     subtitle: "Desde el primer contacto hasta la primera lavadora funcionando, nos ocupamos de absolutamente todo",
-    image: "../assets/source-media/image47.png",
+    image: "../assets/source-media/go-slide-5-bg.jpg",
     foreground: false,
     cards: [
       ["Transporte e instalación completa", ""],
