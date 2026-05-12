@@ -194,12 +194,12 @@ function renderGoWinwin(slide) {
   const investorHTML = `
     <div class="gww-col gww-col--investor">
       <h3 class="gww-col-title">${safe(investor.label || "")}</h3>
-      <ul class="gww-list">${(investor.items || []).map((item) => `<li>${safe(item)}</li>`).join("")}</ul>
+      <ul class="gww-list">${(investor.items || []).map((item) => `<li><span>✓</span>${safe(item)}</li>`).join("")}</ul>
     </div>`;
   const lawashHTML = `
     <div class="gww-col gww-col--lawash">
       <h3 class="gww-col-title">${safe(lawash.label || "")}</h3>
-      <ul class="gww-list">${(lawash.items || []).map((item) => `<li>${safe(item)}</li>`).join("")}</ul>
+      <ul class="gww-list">${(lawash.items || []).map((item) => `<li><span>✓</span>${safe(item)}</li>`).join("")}</ul>
     </div>`;
   return `<div class="go-winwin">
     <div class="gww-header">${titleBlock(slide, true)}</div>
