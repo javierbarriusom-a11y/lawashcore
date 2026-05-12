@@ -77,7 +77,39 @@ window.DECK_SLIDES = [
     image: "../assets/source-media/go-slide-5-bg.jpg",
     foreground: false,
     theme: "go-income-clean",
-    layout: "services"
+    incomeModels: [
+      {
+        label: "MODELO 1",
+        title: "PARTICIPACIÓN\nVARIABLE",
+        metric: "30%",
+        note: "de los ingresos para el propietario del emplazamiento",
+        kicker: "LA WASH SE ENCARGA DE TODO:",
+        variant: "navy",
+        items: [
+          "Transporte e instalación completa",
+          "Servicio técnico y call center 365 días",
+          "Suministro y reposición de consumibles",
+          "Recaudación y control de ingresos",
+          "Marketing y captación de clientes"
+        ]
+      },
+      {
+        label: "MODELO 2",
+        title: "ALQUILER DE\nMÓDULO",
+        metric: "1.500€",
+        metricSuffix: "/mes",
+        note: "Contrato mínimo 2 años · 2 meses de fianza",
+        kicker: "LA WASH APORTA:",
+        variant: "green",
+        items: [
+          "Transporte e instalación",
+          "Servicio técnico incluido",
+          "Tecnología NEXA completa",
+          "App La Wash + cartelería"
+        ]
+      }
+    ],
+    layout: "go-income-models"
   },
   // 5 – La Wash GO! módulo  (NEW – PDF p.6)
   {
@@ -409,12 +441,37 @@ window.DECK_I18N = {
         eyebrow: "GO model",
         title: "TWO WAYS TO GENERATE REVENUE",
         subtitle: "From first contact to the first machine running, we take care of absolutely everything",
-        cards: [
-          ["Complete transport and installation"],
-          ["Technical service and 365-day call center"],
-          ["Supply and replenishment of consumables"],
-          ["Revenue collection and control"],
-          ["Marketing and customer acquisition"]
+        incomeModels: [
+          {
+            label: "MODEL 1",
+            title: "VARIABLE\nPARTICIPATION",
+            metric: "30%",
+            note: "of revenue for the site owner",
+            kicker: "LA WASH TAKES CARE OF EVERYTHING:",
+            variant: "navy",
+            items: [
+              "Complete transport and installation",
+              "Technical service and 365-day call center",
+              "Supply and replenishment of consumables",
+              "Revenue collection and control",
+              "Marketing and customer acquisition"
+            ]
+          },
+          {
+            label: "MODEL 2",
+            title: "MODULE\nRENTAL",
+            metric: "€1,500",
+            metricSuffix: "/month",
+            note: "Minimum 2-year contract · 2-month deposit",
+            kicker: "LA WASH PROVIDES:",
+            variant: "green",
+            items: [
+              "Transport and installation",
+              "Technical service included",
+              "Complete NEXA technology",
+              "La Wash app + signage"
+            ]
+          }
         ]
       },
       {
@@ -637,12 +694,37 @@ window.DECK_I18N = {
         eyebrow: "Modèle GO",
         title: "DEUX FAÇONS DE GÉNÉRER DES REVENUS",
         subtitle: "Du premier contact à la première machine en fonctionnement, nous nous occupons absolument de tout",
-        cards: [
-          ["Transport et installation complète"],
-          ["Service technique et call center 365 jours"],
-          ["Fourniture et réapprovisionnement des consommables"],
-          ["Encaissement et contrôle des revenus"],
-          ["Marketing et acquisition de clients"]
+        incomeModels: [
+          {
+            label: "MODÈLE 1",
+            title: "PARTICIPATION\nVARIABLE",
+            metric: "30 %",
+            note: "des revenus pour le propriétaire de l'emplacement",
+            kicker: "LA WASH S'OCCUPE DE TOUT :",
+            variant: "navy",
+            items: [
+              "Transport et installation complète",
+              "Service technique et call center 365 jours",
+              "Fourniture et réapprovisionnement des consommables",
+              "Encaissement et contrôle des revenus",
+              "Marketing et acquisition de clients"
+            ]
+          },
+          {
+            label: "MODÈLE 2",
+            title: "LOCATION DE\nMODULE",
+            metric: "1 500 €",
+            metricSuffix: "/mois",
+            note: "Contrat minimum 2 ans · 2 mois de caution",
+            kicker: "LA WASH APPORTE :",
+            variant: "green",
+            items: [
+              "Transport et installation",
+              "Service technique inclus",
+              "Technologie NEXA complète",
+              "App La Wash + signalétique"
+            ]
+          }
         ]
       },
       {

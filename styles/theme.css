@@ -605,12 +605,179 @@ main { min-height: 0; display: grid; align-items: center; }
 .go-income-clean main {
   align-items: start;
 }
-.go-income-clean .services-layout--nofg {
-  align-content: start;
-  max-width: 820px;
+.go-income-models {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 18px;
+  height: 100%;
+  min-height: 0;
 }
-.go-income-clean .services-layout--nofg .cards {
-  display: none;
+.gim-header {
+  max-width: 980px;
+}
+.gim-header .title.small {
+  font-size: clamp(54px, 5.4vw, 94px);
+}
+.gim-header .subtitle {
+  max-width: 780px;
+}
+.gim-models {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+  min-height: 0;
+}
+.gim-card {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-height: 0;
+  border-radius: 18px;
+  padding: clamp(20px, 2.15vw, 34px);
+  border: 1px solid rgba(255,255,255,.22);
+  box-shadow: 0 24px 70px rgba(0,0,0,.25);
+}
+.gim-card--navy {
+  background: rgba(0,43,83,.94);
+  color: var(--wash-white);
+}
+.gim-card--green {
+  background: rgba(199,240,40,.96);
+  color: var(--wash-navy);
+}
+.gim-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  width: 100%;
+  padding: 7px 18px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.gim-card--navy .gim-pill {
+  background: var(--wash-green);
+  color: var(--wash-navy);
+}
+.gim-card--green .gim-pill {
+  background: var(--wash-navy);
+  color: var(--wash-green);
+}
+.gim-card h2 {
+  margin: 22px 0 0;
+  font-family: var(--display);
+  font-size: clamp(44px, 3.7vw, 70px);
+  font-weight: 400;
+  line-height: .92;
+  letter-spacing: 0;
+}
+.gim-metric {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-top: 4px;
+  color: var(--wash-green);
+}
+.gim-card--green .gim-metric {
+  color: var(--wash-navy);
+}
+.gim-metric strong {
+  font-family: var(--display);
+  font-size: clamp(66px, 6.4vw, 118px);
+  font-weight: 400;
+  line-height: .78;
+  letter-spacing: 0;
+}
+.gim-metric span {
+  font-size: clamp(18px, 1.8vw, 30px);
+  font-weight: 950;
+}
+.gim-note {
+  margin: 0;
+  font-size: clamp(15px, 1.25vw, 22px);
+  font-weight: 700;
+  line-height: 1.35;
+  color: rgba(255,255,255,.68);
+}
+.gim-card--green .gim-note {
+  color: rgba(0,77,133,.68);
+}
+.gim-kicker {
+  display: grid;
+  gap: 22px;
+  margin: 14px 0 0;
+  font-size: clamp(13px, 1.05vw, 18px);
+  font-weight: 950;
+  letter-spacing: .08em;
+  color: rgba(255,255,255,.7);
+}
+.gim-kicker::before {
+  content: "";
+  display: block;
+  width: 86px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--wash-green);
+}
+.gim-card--green .gim-kicker {
+  color: rgba(0,77,133,.68);
+}
+.gim-card--green .gim-kicker::before {
+  background: var(--wash-navy);
+}
+.gim-list {
+  display: grid;
+  gap: 11px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.gim-list li {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+  font-size: clamp(15px, 1.25vw, 22px);
+  font-weight: 850;
+  line-height: 1.22;
+}
+.gim-list li span {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: var(--wash-green);
+  color: var(--wash-navy);
+  font-size: 17px;
+  font-weight: 950;
+}
+.gim-card--green .gim-list li span {
+  background: var(--wash-navy);
+  color: var(--wash-green);
+}
+@media (max-height: 900px) and (min-width: 681px) {
+  .go-income-models { gap: 10px; }
+  .gim-header .title.small { font-size: clamp(48px, 4.6vw, 74px); }
+  .gim-header .subtitle { font-size: 16px; margin-top: 8px; }
+  .gim-card { gap: 9px; padding: 18px 22px; }
+  .gim-pill { min-height: 26px; padding: 5px 14px; font-size: 10px; }
+  .gim-card h2 { margin-top: 8px; font-size: clamp(34px, 3vw, 52px); }
+  .gim-metric strong { font-size: clamp(52px, 5.1vw, 82px); }
+  .gim-note { font-size: 14px; }
+  .gim-kicker { gap: 12px; margin-top: 6px; font-size: 11px; }
+  .gim-kicker::before { height: 4px; width: 70px; }
+  .gim-list { gap: 8px; }
+  .gim-list li { grid-template-columns: 24px minmax(0, 1fr); gap: 10px; font-size: 14px; }
+  .gim-list li span { width: 22px; height: 22px; font-size: 14px; }
+}
+@media (max-width: 1100px) {
+  .gim-models { grid-template-columns: 1fr; }
+  .go-income-models { overflow: auto; padding-bottom: 18px; }
 }
 .soporte-bg {
   background:

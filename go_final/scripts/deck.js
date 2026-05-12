@@ -40,6 +40,7 @@ function localizeSlide(slide, patch = {}) {
     footLink: patch.footLink ? [patch.footLink[0], slide.footLink?.[1] || patch.footLink[1]] : slide.footLink,
     stats: patch.stats ? mergePairs(slide.stats, patch.stats) : slide.stats,
     cards: patch.cards ? mergePairs(slide.cards, patch.cards) : slide.cards,
+    incomeModels: patch.incomeModels || slide.incomeModels,
     winwin: patch.winwin ? {
       investor: {
         ...(slide.winwin?.investor || {}),
@@ -244,6 +245,27 @@ function renderGoAmortize(slide) {
       ${am.highlight ? `<div class="gam-highlight">${safe(am.highlight)}</div>` : ""}
     </div>
     <div class="gam-steps">${stepsHTML}</div>
+  </div>`;
+}
+
+// ── Go Income Models layout renderer ───────────────────────────────────────
+function renderGoIncomeModels(slide) {
+  const models = slide.incomeModels || [];
+  const cardsHTML = models.map((model) => `
+    <article class="gim-card gim-card--${safe(model.variant || "navy")}">
+      <div class="gim-pill">${safe(model.label || "")}</div>
+      <h2>${lines(model.title || "")}</h2>
+      <div class="gim-metric">
+        <strong>${safe(model.metric || "")}</strong>
+        ${model.metricSuffix ? `<span>${safe(model.metricSuffix)}</span>` : ""}
+      </div>
+      ${model.note ? `<p class="gim-note">${lines(model.note)}</p>` : ""}
+      ${model.kicker ? `<p class="gim-kicker">${lines(model.kicker)}</p>` : ""}
+      <ul class="gim-list">${(model.items || []).map((item) => `<li><span>✓</span>${lines(item)}</li>`).join("")}</ul>
+    </article>`).join("");
+  return `<div class="go-income-models">
+    <div class="gim-header">${titleBlock(slide, true)}</div>
+    <div class="gim-models">${cardsHTML}</div>
   </div>`;
 }
 
@@ -494,6 +516,7 @@ function layout(slide) {
     </div>`;
   }
   if (slide.layout === "image-only") return imageOnly(slide);
+  if (slide.layout === "go-income-models") return renderGoIncomeModels(slide);
   if (slide.layout === "bgonly") {
     return `<img class="bgonly-img" src="${safe(slide.image)}" alt="">`;
   }
