@@ -76,13 +76,7 @@ window.DECK_SLIDES = [
     subtitle: "Desde el primer contacto hasta la primera lavadora funcionando, nos ocupamos de absolutamente todo",
     image: "../assets/source-media/go-slide-5-bg.jpg",
     foreground: false,
-    cards: [
-      ["Transporte e instalación completa", ""],
-      ["Servicio técnico y callcenter 365 días", ""],
-      ["Suministro y reposición de consumibles", ""],
-      ["Recaudación y control de ingresos", ""],
-      ["Marketing y captación de clientes", ""]
-    ],
+    theme: "go-income-clean",
     layout: "services"
   },
   // 5 – La Wash GO! módulo  (NEW – PDF p.6)

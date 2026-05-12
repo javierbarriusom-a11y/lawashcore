@@ -599,6 +599,19 @@ main { min-height: 0; display: grid; align-items: center; }
   grid-template-columns: minmax(0, 1fr);
   max-width: 68%;
 }
+.go-income-clean .slide-grid {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+.go-income-clean main {
+  align-items: start;
+}
+.go-income-clean .services-layout--nofg {
+  align-content: start;
+  max-width: 820px;
+}
+.go-income-clean .services-layout--nofg .cards {
+  display: none;
+}
 .soporte-bg {
   background:
     linear-gradient(90deg,
