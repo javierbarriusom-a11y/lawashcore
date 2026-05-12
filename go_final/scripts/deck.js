@@ -179,8 +179,8 @@ function renderGoLocations(slide) {
   return `<div class="go-locations">
     ${titleBlock(slide, true)}
     <div class="gol-body">
-      <div class="cards two-col">${cardsHTML}</div>
       <ul class="gol-bullets">${bulletsHTML}</ul>
+      <div class="cards two-col">${cardsHTML}</div>
     </div>
   </div>`;
 }

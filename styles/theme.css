@@ -1325,29 +1325,36 @@ main:has(.cta-layout) { align-items: stretch; }
 }
 .gol-body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 20px;
   min-height: 0;
 }
-.go-locations .cards { margin-top: 0; gap: 10px; align-content: start; }
-.go-locations .card { padding: 16px 18px; }
-.go-locations .card-icon { width: 48px; height: 48px; margin-bottom: 8px; }
+.go-locations .cards {
+  width: 100%;
+  margin-top: 0;
+  gap: 18px;
+  align-content: stretch;
+}
+.go-locations .card {
+  min-height: 160px;
+  padding: 22px 28px;
+}
+.go-locations .card-icon { width: 58px; height: 58px; margin-bottom: 10px; }
 .gol-bullets {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
 }
 .gol-bullets li {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: clamp(26px, 2.15vw, 38px);
+  font-weight: 900;
   color: #fff;
-  padding-left: 18px;
-  border-left: 4px solid var(--wash-green);
-  line-height: 1.35;
+  padding-left: 24px;
+  border-left: 6px solid var(--wash-green);
+  line-height: 1.14;
 }
 
 /* ── GO card icon + accent titles ────────────────────────────────────────── */
