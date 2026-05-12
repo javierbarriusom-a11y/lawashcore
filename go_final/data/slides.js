@@ -117,8 +117,9 @@ window.DECK_SLIDES = [
     eyebrow: "El módulo",
     title: "LA WASH GO!\nLA LAVANDERÍA QUE CABE EN CUALQUIER RINCÓN",
     subtitle: "El Módulo La Wash GO es una lavandería autoservicio completa, lista para instalar en exterior o interior de cualquier negocio. Compacta, robusta y 100% autónoma.",
-    image: "../assets/source-media/image18.png",
+    image: "../assets/source-media/go-module-gasolinera.jpg",
     foreground: false,
+    theme: "go-module-feature",
     cards: [
       ["Dimensiones", "3.500 × 2.040 × 2.600 mm"],
       ["Equipamiento", "2 lavadoras + 1 ó 2 secadoras 17 kg"],
@@ -478,6 +479,7 @@ window.DECK_I18N = {
         eyebrow: "The module",
         title: "LA WASH GO!\nTHE LAUNDRY THAT FITS ANYWHERE",
         subtitle: "The La Wash GO module is a complete self-service laundry, ready to install outdoors or indoors in any business. Compact, robust and 100% autonomous.",
+        theme: "go-module-feature",
         cards: [
           ["Dimensions", "3,500 × 2,040 × 2,600 mm"],
           ["Equipment", "2 washers + 1 or 2 dryers, 17 kg"],
@@ -731,6 +733,7 @@ window.DECK_I18N = {
         eyebrow: "Le module",
         title: "LA WASH GO!\nLA LAVERIE QUI TIENT DANS N'IMPORTE QUEL ESPACE",
         subtitle: "Le module La Wash GO est une laverie libre-service complète, prête à être installée en extérieur ou en intérieur dans tout type d'activité. Compacte, robuste et 100 % autonome.",
+        theme: "go-module-feature",
         cards: [
           ["Dimensions", "3 500 × 2 040 × 2 600 mm"],
           ["Équipement", "2 lave-linge + 1 ou 2 sèche-linge de 17 kg"],
