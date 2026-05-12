@@ -91,4 +91,6 @@ URL esperada:
 
 ```text
 https://javierbarriusom-a11y.github.io/lawashcore/
+https://javierbarriusom-a11y.github.io/lawashcore/go/
+https://javierbarriusom-a11y.github.io/lawashcore/go_final/
 ```
